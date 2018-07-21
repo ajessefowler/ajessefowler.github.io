@@ -47,13 +47,13 @@
 }
 
 @keyframes menuIn {
-	from { transform: translateX(270px); }
-	to { transform: translateX(0px); }
+	from { transform: scaleY(0); }
+	to { transform: scaleY(1); }
 }
 
 @keyframes menuOut {
-	from { transform: translateX(0px); }
-	to { transform: translateX(270px); }
+	from { transform: scaleY(1); }
+	to { transform: scaleY(0); }
 }
 
 @keyframes fadeOut {

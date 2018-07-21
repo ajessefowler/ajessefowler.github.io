@@ -69,14 +69,25 @@ h2 {
 }
 
 #menu {
-	margin-top: 55px;
-	height: calc(100vh - 55px);
-	background-color: rgba(150, 150, 150, 0.9);
-	width: 250px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 35px;
+	background-color: rgba(70, 70, 70, 0.9);
+	width: calc(100% - 20px);
 	position: fixed;
-	right: 0;
+	top: 55px;
 	z-index: 5;
-	transform: translateX(270px);
+	transform: scaleY(0);
+	transform-origin: center top;
+	padding: 0 10px 4px;
+}
+
+#menu > p {
+	color: #eeeeee;
+	font-size: 12pt;
+	letter-spacing: 1px;
+	opacity: 0;
 }
 
 #content {
