@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
 			menuOpen = true;
 			fadeInMenuItems();
 			document.getElementById('menu').style.animation = 'menuIn .3s ease forwards';
-			document.getElementById('menumiddle').style.animation = 'fadeOut .3s ease forwards';
+			document.getElementById('menumiddle').style.animation = 'fadeOut .2s ease forwards';
 			document.getElementById('menushade').style.animation = 'fadeIn .3s ease forwards';
 			document.getElementById('menutop').style.animation = 'menuTopOpen .3s ease forwards';
 			document.getElementById('menubottom').style.animation = 'menuBottomOpen .3s ease forwards';
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
 			menuOpen = false;
 			fadeOutMenuItems();
 			document.getElementById('menu').style.animation = 'menuOut .3s ease forwards';
-			document.getElementById('menumiddle').style.animation = 'fadeIn .3s ease forwards';
+			document.getElementById('menumiddle').style.animation = 'fadeIn .2s ease forwards';
 			document.getElementById('menushade').style.animation = 'fadeOut .3s ease forwards';
 			document.getElementById('menutop').style.animation = 'menuTopClose .3s ease forwards';
 			document.getElementById('menubottom').style.animation = 'menuBottomClose .3s ease forwards';
