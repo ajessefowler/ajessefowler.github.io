@@ -1,48 +1,48 @@
 @keyframes menuTopOpen {
 	from { 
 		transform: rotate(0deg);
-		background-color: #111111; 
+		background-color: #eeeeee; 
 	}
 
 	to { 
 		transform: rotate(-36deg);
-		background-color: red; 
+		background-color: #e53935;
 	}
 }
 
 @keyframes menuBottomOpen {
 	from { 
 		transform: rotate(0deg); 
-		background-color: #111111; 
+		background-color: #eeeeee; 
 	}
 
 	to { 
 		transform: rotate(36deg); 
-		background-color: red; 
+		background-color: #e53935; 
 	}
 }
 
 @keyframes menuTopClose {
 	from { 
 		transform: rotate(-36deg); 
-		background-color: red;
+		background-color: #e53935;
 	}
 
 	to { 
 		transform: rotate(0deg); 
-		background-color: #111111; 
+		background-color: #eeeeee; 
 	}
 }
 
 @keyframes menuBottomClose {
 	from { 
 		transform: rotate(36deg); 
-		background-color: red;
+		background-color: #e53935;
 	}
 
 	to { 
 		transform: rotate(0deg); 
-		background-color: #111111; 
+		background-color: #eeeeee;  
 	}
 }
 
