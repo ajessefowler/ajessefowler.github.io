@@ -24,10 +24,15 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
 function fadeInMenuItems() {
 	let i;
-	const nodes = document.getElementById('menu').getElementsByTagName('p');
+	let delay = 150;
+	const nodes = document.getElementById('menu').children;
 
 	for (i = 0; i < nodes.length; i++) {
-		nodes[i].style.animation = 'fadeIn .2s ease .2s forwards';
+		let element = nodes[i];
+		setTimeout(function() {
+			element.style.animation = 'fadeIn .3s ease forwards';
+		}, delay)
+		delay += 60;
 	}
 }
 
