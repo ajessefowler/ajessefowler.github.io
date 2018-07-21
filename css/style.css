@@ -1,0 +1,60 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+nav {
+	height: 50px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(200, 200, 200, 0.8);
+	/*box-shadow: 0 1px 4px #999999;*/
+	padding: 0 16px;
+	position: fixed;
+	top: 0;
+	z-index: 5;
+}
+
+nav > h2 {
+	margin-right: auto;
+}
+
+p {
+	font-family: 'Raleway', sans-serif;
+	margin: 0;
+}
+
+h2 {
+	cursor: default;
+	color: #111111;
+	font-family: 'Fjalla One', sans-serif;
+	font-weight: 300;
+	font-size: 18pt;
+	margin: 0;
+}
+
+.menudiv {
+	height: 2px;
+	width: 20px;
+	background-color: #111111;
+	margin: 2px 0;
+}
+
+#menubutton {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	margin-right: 24px;
+	padding: 8px;
+}
+
+#menutop {
+	transform-origin: right center;
+}
+
+#menubottom {
+	transform-origin: right center;
+}

@@ -1,0 +1,57 @@
+@keyframes menuTopOpen {
+	from { 
+		transform: rotate(0deg);
+		background-color: #111111; 
+	}
+
+	to { 
+		transform: rotate(-36deg);
+		background-color: red; 
+	}
+}
+
+@keyframes menuBottomOpen {
+	from { 
+		transform: rotate(0deg); 
+		background-color: #111111; 
+	}
+
+	to { 
+		transform: rotate(36deg); 
+		background-color: red; 
+	}
+}
+
+@keyframes menuTopClose {
+	from { 
+		transform: rotate(-36deg); 
+		background-color: red;
+	}
+
+	to { 
+		transform: rotate(0deg); 
+		background-color: #111111; 
+	}
+}
+
+@keyframes menuBottomClose {
+	from { 
+		transform: rotate(36deg); 
+		background-color: red;
+	}
+
+	to { 
+		transform: rotate(0deg); 
+		background-color: #111111; 
+	}
+}
+
+@keyframes fadeOut {
+	from { opacity: 1; }
+	to { opacity: 0; }
+}
+
+@keyframes fadeIn {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
