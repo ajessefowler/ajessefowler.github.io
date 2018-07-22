@@ -92,33 +92,86 @@ h2 {
 	opacity: 0;
 }
 
-#photo {
+#homephoto {
 	position: relative;
 	height: 255px;
 	width: 100%;
-	background-color: gray;
+	background-color: #555555;
 }
 
-#photo > h2 {
+#homephoto > h2 {
 	position: absolute;
-	bottom: 122px;
+	bottom: 120px;
 	left: 20px;
+	color: #eeeeee;
 }
 
-#photo > p {
+#homephoto > p {
 	position: relative;
 	top: 135px;
 	left: 20px;
-	width: 210px;
+	width: 180px;
 	font-size: 11pt;
+	color: #eeeeee;
 }
 
-#content {
+#projectsphoto {
+	height: 150px;
+	width: 100%;
+	background-color: #555555;
+}
+
+#about {
 	position: relative;
 	padding: 13px 11px;
 }
 
-#content > p {
+#about > p {
 	text-align: center;
-	padding-top: 4px;
+	padding: 14px 11px 28px;
+}
+
+#about > h2 {
+	width: 63px;
+	color: #555;
+	padding-bottom: 3px;
+	border-bottom: 2px solid #555;
+	text-align: center;
+}
+
+#projects {
+	position: relative;
+	padding: 13px 11px;
+}
+
+#projects > p {
+	text-align: center;
+	padding: 14px 11px 28px;
+}
+
+#projects > h2 {
+	width: 85px;
+	color: #555;
+	padding-bottom: 3px;
+	border-bottom: 2px solid #555;
+	text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+	#homephoto {
+		height: 650px;
+	}
+
+	#homephoto > h2 {
+		bottom: 315px;
+		left: 140px;
+		font-size: 30pt;
+	}
+
+	#homephoto > p {
+		top: 335px;
+		left: 140px;
+		width: 800px;
+		font-size: 18pt;
+	}
 }
