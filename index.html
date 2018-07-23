@@ -7,10 +7,12 @@
 	<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Raleway" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/animation.css">
+	<script type="text/javascript" src="js/zenscroll-min.js"></script>
 	<script type="text/javascript" src="js/menu.js"></script>
 </head>
 <body>
 	<div id="menushade"></div>
+
 	<nav>
 		<h2>Jesse Fowler</h2>
 		<div id="menubutton">
@@ -19,28 +21,52 @@
 			<div id="menubottom" class="menudiv"></div>
 		</div>
 	</nav>
+
 	<div id="menu">
-		<p>Home</p>
-		<p>About</p>
-		<p>Projects</p>
-		<p>Contact</p>
+		<a href="#homephoto"><p>Home</p></a>
+		<a href="#about"><p>About</p></a>
+		<a href="#projects"><p>Projects</p></a>
+		<a href="#contact"><p>Contact</p></a>
 	</div>
+
 	<div id="homephoto">
 		<h2>Hello!</h2>
 		<p>My name is Jesse Fowler.</p>
 		<p>I'm a full stack developer from Columbus, Ohio.</p>
 	</div>
-	<div id="about">
+
+	<div class="info" id="about">
 		<h2>About</h2>
 		<p>CSCC</p>
 		<h2>Skills</h2>
 		<p>JavaScript</p>
 	</div>
-	<div id="projectsphoto">
-	</div>
-	<div id="projects">
+
+	<div class="photo"></div>
+
+	<div class="info" id="projects">
 		<h2>Projects</h2>
-		<p>Speedcats Car Rental</p>
+		<h3>Speedcats Car Rental</h3>
+		<p>A full stack website created for a small car rental company, built with Django. Developed in two months for Columbus State Community College's capstone project. Allows customers to place, modify, and cancel reservations online.</p>
+		<h3>Thunderbolt Weather</h3>
+	</div>
+
+	<div class="photo"></div>
+
+	<div class="info" id="contact">
+		<h2>Contact</h2>
+		<p>Need a developer with a flawless attention to detail?</p>
+		<form name="contactform" id="contactform">
+			<p>Name</p>
+			<input type="text" name="name">
+			<p>Email</p>
+			<input type="email" name="email">
+			<p>Subject</p>
+			<input type="text" name="subject">
+			<p>Message</p>
+			<input type="text" name="message"><br>
+			<input type="submit" value="Send">
+		</form>
 	</div>
 </body>
 </html>
