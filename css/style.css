@@ -235,12 +235,35 @@ textarea:focus, input:focus {
 }
 
 @media only screen and (min-width: 768px) {
-	#menu > a > p:hover {
-		cursor: pointer;
+
+	p {
+		font-size: 13pt !important;
+	}
+
+	h3 {
+		font-size: 17pt;
+	}
+
+	nav > h2 {
+		font-size: 24pt;
+	}
+
+	textarea:focus, input:focus {
+		background-color: #fff !important;
+	}
+
+	textarea:hover, input:hover {
+		border: 1px solid #ccc !important;
+		border-radius: 5px !important;
 	}
 
 	.info {
-		padding: 13px 25%;
+		padding: 13px 20%;
+	}
+
+	.info > h2 {
+		font-size: 28pt;
+		margin-bottom: 16px;
 	}
 
 	.photo {
@@ -252,16 +275,18 @@ textarea:focus, input:focus {
 		background-color: rgba(60, 60, 60, 0);
 		width: 400px;
 		top: 0;
-		right: 0;
+		right: 4px;
 		transform: scaleY(1);
 		border-top: none;
 	}
 
 	#menu > a > p {
 		opacity: 1;
+		padding: 8px;
 	}
 
 	#menu > a > p:hover {
+		cursor: pointer;
 		color: #aaa;
 	}
 
@@ -289,6 +314,22 @@ textarea:focus, input:focus {
 		left: 140px;
 		width: 800px;
 		font-size: 18pt;
+	}
+
+	#about > h2 {
+		width: 105px;
+	}
+
+	#projects > h2 {
+		width: 135px;
+	}
+
+	#contact {
+		padding: 13px 30%;
+	}
+
+	#contact > h2 {
+		width: 125px;
 	}
 
 	#send:hover {
