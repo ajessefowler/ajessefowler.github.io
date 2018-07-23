@@ -21,6 +21,7 @@ nav > h2 {
 	margin-right: auto;
 	margin-left: 8px;
 	color: #eeeeee;
+	font-size: 20pt;
 }
 
 p {
@@ -52,8 +53,15 @@ textarea {
 	resize: none;
 }
 
+textarea, input[type="text"], input[type="submit"] {
+	-webkit-appearance: none;
+	border-radius: 0;
+}
+
 textarea:focus, input:focus {
 	outline: none;
+	border: 1px solid #ccc !important;
+	border-radius: 5px !important;
 }
 
 .menudiv {
@@ -77,6 +85,7 @@ textarea:focus, input:focus {
 .info > p {
 	text-align: center;
 	padding: 14px 6px 12px;
+	font-size: 11pt;
 }
 
 .info > h2 {
@@ -86,7 +95,7 @@ textarea:focus, input:focus {
 	margin-left: 9px;
 	border-bottom: 2px solid #555;
 	text-align: center;
-	font-size: 16pt;
+	font-size: 18pt;
 }
 
 #menubutton {
@@ -156,14 +165,15 @@ textarea:focus, input:focus {
 	bottom: 120px;
 	left: 20px;
 	color: #eeeeee;
+	font-size: 22pt;
 }
 
 #homephoto > p {
 	position: relative;
 	top: 135px;
 	left: 20px;
-	width: 180px;
-	font-size: 11pt;
+	width: 190px;
+	font-size: 12pt;
 	color: #eeeeee;
 }
 
@@ -190,7 +200,7 @@ textarea:focus, input:focus {
 #contactform > input {
 	width: calc(100% - 18px);
 	height: 20px;
-	padding: 4px 9px;
+	padding: 6px 9px;
 	margin: 0;
 	background-color: #eee;
 	border: none;
@@ -202,10 +212,11 @@ textarea:focus, input:focus {
 #contactform > textarea {
 	width: calc(100% - 18px);
 	height: 150px;
-	padding: 4px 9px;
-	margin: 0;
+	padding: 8px 9px;
+	margin: 0 0 24px;
 	background-color: #eee;
 	border: none;
+	border-bottom: 1px solid #ccc;
 	font-size: 12pt;
 	font-family: 'Raleway', sans-serif;
 }
@@ -215,10 +226,12 @@ textarea:focus, input:focus {
 }
 
 #send {
-	border: none !important;
+	border: 1px solid #ccc !important;
 	background-color: #fff !important;
 	height: 35px !important;
-	width: 100% !important;
+	width: 100px !important;
+	margin-left: auto !important;
+	border-radius: 5px !important;
 }
 
 @media only screen and (min-width: 768px) {
