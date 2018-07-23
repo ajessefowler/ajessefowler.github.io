@@ -95,12 +95,12 @@ textarea:focus, input:focus {
 }
 
 .info > h2 {
-	width: 55px;
+	width: calc(100% - 22px);
 	color: #333;
-	padding-bottom: 3px;
+	padding-bottom: 5px;
 	margin-left: 9px;
-	border-bottom: 2px solid #555;
-	text-align: center;
+	border-bottom: 1px solid #ccc;
+	text-align: left;
 	font-size: 18pt;
 }
 
@@ -188,7 +188,6 @@ textarea:focus, input:focus {
 }
 
 #about > h2 {
-	width: 68px;
 	margin-bottom: 18px;
 }
 
@@ -197,11 +196,11 @@ textarea:focus, input:focus {
 }
 
 #projects > h2 {
-	width: 84px;
+	margin-bottom: 18px;
 }
 
 #contact > h2 {
-	width: 78px;
+	margin-bottom: 5px;
 }
 
 #contactform {
@@ -261,11 +260,6 @@ textarea:focus, input:focus {
 
 	nav > h2 {
 		font-size: 24pt;
-	}
-
-	textarea, input {
-		border: 1px solid transparent !important;
-		border-bottom: 1px solid #ccc !important;
 	}
 
 	textarea:hover, input:hover {
