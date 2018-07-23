@@ -61,6 +61,8 @@ textarea, input[type="text"], input[type="submit"], input[type="email"] {
 textarea, input {
 	border: 1px solid transparent !important;
 	border-bottom: 1px solid #ccc !important;
+	font-size: 16px;
+	color: #444;
 }
 
 textarea:focus, input:focus {
@@ -78,7 +80,7 @@ textarea:focus, input:focus {
 }
 
 .photo {
-	height: 150px;
+	height: 180px;
 	width: 100%;
 	background-color: #555555;
 }
@@ -171,7 +173,7 @@ textarea:focus, input:focus {
 	bottom: 120px;
 	left: 20px;
 	color: #eeeeee;
-	font-size: 22pt;
+	font-size: 18pt;
 }
 
 #homephoto > p {
@@ -179,7 +181,7 @@ textarea:focus, input:focus {
 	top: 135px;
 	left: 20px;
 	width: 190px;
-	font-size: 12pt;
+	font-size: 11pt;
 	color: #eeeeee;
 }
 
@@ -191,12 +193,24 @@ textarea:focus, input:focus {
 	margin-bottom: 18px;
 }
 
+#about > h2:first-of-type {
+	margin-bottom: 8px;
+}
+
+#projects {
+	margin-bottom: 5px;
+}
+
 #projects > p {
-	padding-bottom: 0;
+	padding-bottom: 4px;
 }
 
 #projects > h2 {
 	margin-bottom: 18px;
+}
+
+#contact > p {
+	padding-top: 8px;
 }
 
 #contact > h2 {
@@ -235,8 +249,14 @@ textarea:focus, input:focus {
 	font-family: 'Raleway', sans-serif;
 }
 
-#contactform > p {
+#contactform > h3 {
+	font-size: 18px;
 	padding: 18px 0 6px;
+}
+
+#contactform > h3:first-of-type {
+	margin-top: 0;
+	padding-top: 12px;
 }
 
 #send {
@@ -245,6 +265,7 @@ textarea:focus, input:focus {
 	height: 35px !important;
 	width: 100px !important;
 	margin-left: auto !important;
+	margin-bottom: 12px !important;
 	border-radius: 5px !important;
 }
 
