@@ -45,7 +45,7 @@ h3 {
 	color: #222;
 	font-family: 'Raleway', sans-serif;
 	font-size: 13pt;
-	margin: 16px 0 0;
+	margin: 13px 0 0;
 	text-align: center;
 }
 
@@ -177,16 +177,25 @@ textarea:focus, input:focus {
 	color: #eeeeee;
 }
 
+#about > p {
+	padding-top: 5px;
+}
+
+#about > h2 {
+	width: 68px;
+	margin-bottom: 18px;
+}
+
 #projects > p {
 	padding-bottom: 0;
 }
 
 #projects > h2 {
-	width: 75px;
+	width: 84px;
 }
 
 #contact > h2 {
-	width: 70px;
+	width: 78px;
 }
 
 #contactform {
@@ -246,6 +255,11 @@ textarea:focus, input:focus {
 
 	nav > h2 {
 		font-size: 24pt;
+	}
+
+	textarea, input {
+		border: 1px solid transparent !important;
+		border-bottom: 1px solid #ccc !important;
 	}
 
 	textarea:focus, input:focus {
@@ -316,6 +330,10 @@ textarea:focus, input:focus {
 		font-size: 18pt;
 	}
 
+	#about > p {
+		padding-bottom: 26px;
+	}
+
 	#about > h2 {
 		width: 105px;
 	}
@@ -336,5 +354,4 @@ textarea:focus, input:focus {
 		cursor: pointer;
 		background-color: #ccc !important;
 	}
-}
 }
