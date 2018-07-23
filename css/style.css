@@ -53,7 +53,7 @@ textarea {
 	resize: none;
 }
 
-textarea, input[type="text"], input[type="submit"] {
+textarea, input[type="text"], input[type="submit"], input[type="email"] {
 	-webkit-appearance: none;
 	border-radius: 0;
 }
@@ -235,6 +235,45 @@ textarea:focus, input:focus {
 }
 
 @media only screen and (min-width: 768px) {
+	#menu > a > p:hover {
+		cursor: pointer;
+	}
+
+	.info {
+		padding: 13px 25%;
+	}
+
+	.photo {
+		height: 400px;
+	}
+
+	#menu {
+		height: 55px;
+		background-color: rgba(60, 60, 60, 0);
+		width: 400px;
+		top: 0;
+		right: 0;
+		transform: scaleY(1);
+		border-top: none;
+	}
+
+	#menu > a > p {
+		opacity: 1;
+	}
+
+	#menu > a > p:hover {
+		color: #aaa;
+	}
+
+	#menushade {
+		height: 55px;
+		opacity: 1;
+	}
+
+	#menubutton {
+		display: none;
+	}
+
 	#homephoto {
 		height: 650px;
 	}
@@ -251,4 +290,10 @@ textarea:focus, input:focus {
 		width: 800px;
 		font-size: 18pt;
 	}
+
+	#send:hover {
+		cursor: pointer;
+		background-color: #ccc !important;
+	}
+}
 }

@@ -25,7 +25,9 @@ document.addEventListener('DOMContentLoaded', function(event) {
 		const element = nodes[i];
 		element.addEventListener('click', function() {
 			menuOpen = false;
-			closeMenu();
+			if (window.screen.availWidth < 768) {
+				closeMenu();
+			}
 		});
 	}
 });
