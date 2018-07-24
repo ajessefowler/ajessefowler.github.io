@@ -263,8 +263,8 @@ textarea:focus, input:focus {
 	font-family: 'Raleway', sans-serif;
 }
 
-#contactform > h3 {
-	font-size: 17px;
+#contactform > p {
+	font-size: 18px;
 	padding: 18px 0 6px;
 	color: #333;
 }
