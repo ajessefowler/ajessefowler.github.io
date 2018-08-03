@@ -100,10 +100,16 @@ textarea:focus, input:focus {
 	width: calc(100% - 22px);
 	color: #333;
 	padding-bottom: 5px;
-	margin-left: 9px;
+	margin: 0 9px;
 	border-bottom: 1px solid #ccc;
 	text-align: left;
 	font-size: 29px;
+}
+
+.anchor {
+	position: relative;
+	top: -45px;
+	display: block;
 }
 
 #menubutton {
@@ -146,7 +152,7 @@ textarea:focus, input:focus {
 	transform: scaleY(0);
 	transform-origin: center top;
 	padding: 0 10px;
-	border-top: 1px solid rgb(65, 65, 65);
+	border-top: 1px solid rgb(75, 75, 75);
 }
 
 #menu > a {
@@ -284,6 +290,10 @@ textarea:focus, input:focus {
 	border-radius: 5px !important;
 }
 
+#send:active {
+	background-color: #ccc !important;
+}
+
 @media only screen and (min-width: 768px) {
 
 	p {
@@ -291,11 +301,11 @@ textarea:focus, input:focus {
 	}
 
 	h3 {
-		font-size: 17pt;
+		font-size: 18pt;
 	}
 
 	nav > h2 {
-		font-size: 24pt;
+		font-size: 22pt;
 	}
 
 	textarea:hover, input:hover {
@@ -346,18 +356,18 @@ textarea:focus, input:focus {
 	}
 
 	#homephoto {
-		height: 650px;
+		height: 570px;
 	}
 
 	#homephoto > h2 {
-		bottom: 315px;
-		left: 140px;
-		font-size: 30pt;
+		bottom: 275px;
+		left: 180px;
+		font-size: 28pt;
 	}
 
 	#homephoto > p {
-		top: 335px;
-		left: 140px;
+		top: 298px;
+		left: 180px;
 		width: 800px;
 		font-size: 18pt;
 	}
@@ -366,25 +376,8 @@ textarea:focus, input:focus {
 		padding-bottom: 26px;
 	}
 
-	#about > h2 {
-		width: 105px;
-	}
-
-	#projects > img {
-		width: 40%;
-		padding: 30px 30% 18px;
-	}
-
-	#projects > h2 {
-		width: 135px;
-	}
-
-	#contact {
-		padding: 13px 30%;
-	}
-
-	#contact > h2 {
-		width: 125px;
+	#contactform {
+		padding: 0 15%;
 	}
 
 	#send:hover {

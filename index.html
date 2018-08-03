@@ -11,6 +11,7 @@
 	<script type="text/javascript" src="js/menu.js"></script>
 </head>
 <body>
+	<!-- Shade to emphasize menu when menu is open -->
 	<div id="menushade"></div>
 
 	<nav>
@@ -24,9 +25,9 @@
 
 	<div id="menu">
 		<a href="#homephoto"><p>Home</p></a>
-		<a href="#about"><p>About</p></a>
-		<a href="#projects"><p>Projects</p></a>
-		<a href="#contact"><p>Contact</p></a>
+		<a href="#abouta"><p>About</p></a>
+		<a href="#projectsa"><p>Projects</p></a>
+		<a href="#contacta"><p>Contact</p></a>
 	</div>
 
 	<div id="homephoto">
@@ -35,34 +36,37 @@
 		<p>I'm a full stack developer from Columbus, Ohio.</p>
 	</div>
 
+	<a class="anchor" id="abouta"></a>
 	<div class="info" id="about">
 		<h2>About</h2>
 		<p>Growing up in a suburb of Dayton, Ohio, I discovered a passion for computers at the age of four. I began studying computer science in early 2016, beginning with a Java class. I graduated from <strong>Columbus State Community College</strong> in the summer of 2018.</p>
 		<h2>Skills</h2>
 		<h3>Languages</h3>
-		<p> JavaScript, Java, Python, HTML, CSS, Sass, SQL</p>
+		<p> JavaScript, Java, Python, HTML, CSS, SQL</p>
 		<h3>Frameworks and Libraries</h3>
-		<p>React, Django, jQuery</p>
+		<p>Django, jQuery</p>
 		<h3>Additional Skills</h3>
 		<p>Unit Testing, Git, UI/UX Design, Agile Development</p>
 	</div>
 
 	<div class="photo"></div>
 
+	<a class="anchor" id="projectsa"></a>
 	<div class="info" id="projects">
 		<h2>Projects</h2>
 		<h3>Speedcats Car Rental</h3>
-		<p>A full stack website created for a small rental car company, built with <strong>Django</strong>. Developed in two months for Columbus State Community College's capstone project. Allows customers to place, modify, and cancel reservations online with a user-friendly, material-inspired design.</p>
+		<p>A full stack website created for a small rental car company, built with <strong>Django</strong> and <strong>JavaScript</strong>. Developed in two months for Columbus State Community College's capstone project. Allows customers to place, modify, and cancel reservations online with a user-friendly, material-inspired design.</p>
 		<h3>Thunderbolt Weather</h3>
-		<p>A minimalistic weather reference.</p>
+		<p>A local weather reference with a minimalistic, uncluttered interface, built with <strong>JavaScript</strong>. Provides current conditions, hourly forecast, daily forecast, and a precipitation radar. Allows location saving using local storage.</p>
 	</div>
 
 	<div class="photo"></div>
 
+	<a class="anchor" id="contacta"></a>
 	<div class="info" id="contact">
 		<h2>Contact</h2>
 		<p>Need a versatile developer with an impeccable attention to detail? Want to chat about technology? Know any good restaurants? Use the form below to get in touch with me!</p>
-		<form name="contactform" id="contactform">
+		<form name="contactform" id="contactform" action="https://formspree.io/ajessefowler@icloud.com" method="POST">
 			<p>Name</p>
 			<input type="text" name="name">
 			<p>Email</p>
