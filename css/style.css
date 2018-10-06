@@ -52,9 +52,8 @@ h3 {
 	cursor: default;
 	color: #222;
 	font-family: 'Nanum Gothic Coding', sans-serif;
-	font-size: 18px;
+	font-size: 20px;
 	margin: 13px 0 0;
-	text-align: center;
 	letter-spacing: 0.2px;
 }
 
@@ -133,9 +132,6 @@ input[type="submit"], button {
 	display: block;
 }
 
-.skills {
-	text-align: center !important;
-}
 
 .projectbuttons {
 	padding: 10px 0% 0;
@@ -238,6 +234,11 @@ input[type="submit"], button {
 	margin-bottom: 18px;
 }
 
+#about > h3, #projects > h3 {
+	padding: 0 9px;
+	color: rgb(73, 73, 73);
+}
+
 #about > h2:first-of-type {
 	margin-bottom: 8px;
 }
@@ -277,7 +278,7 @@ input[type="submit"], button {
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
-	margin: 0 20px;
+	margin: 0 9px;
 }
 
 #contactform > input {
@@ -307,7 +308,8 @@ input[type="submit"], button {
 #contactform > p {
 	font-size: 18px;
 	padding: 18px 0 6px;
-	color: #333;
+	color: #444;
+	font-weight: 700;
 }
 
 #contactform > h3:first-of-type {
