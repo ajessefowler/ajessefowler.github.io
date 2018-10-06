@@ -17,25 +17,33 @@ nav {
 	z-index: 5;
 }
 
-nav > h2 {
+nav > a {
 	margin-right: auto;
-	margin-left: 8px;
+}
+
+nav > a > h2 {
 	color: #eeeeee;
 	font-size: 20pt;
 }
 
+a {
+	text-decoration: none;
+}
+
 p {
 	cursor: default;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Nanum Gothic Coding', sans-serif;
 	margin: 0;
 	color: #222;
+	line-height: 16px;
+	letter-spacing: 0.3px;
 }
 
 h2 {
 	cursor: default;
 	color: #111111;
-	font-family: 'Fjalla One', sans-serif;
-	font-weight: 300;
+	font-family: 'Nanum Gothic Coding', sans-serif;
+	font-weight: 700;
 	font-size: 18pt;
 	margin: 0;
 }
@@ -43,10 +51,11 @@ h2 {
 h3 {
 	cursor: default;
 	color: #222;
-	font-family: 'Raleway', sans-serif;
-	font-size: 19px;
+	font-family: 'Nanum Gothic Coding', sans-serif;
+	font-size: 18px;
 	margin: 13px 0 0;
 	text-align: center;
+	letter-spacing: 0.2px;
 }
 
 textarea {
@@ -72,6 +81,18 @@ textarea:focus, input:focus {
 	background-color: #fff !important;
 }
 
+input[type="submit"], button {
+	border: 1px solid #ccc !important;
+	background-color: #fff !important;
+	height: 35px !important;
+	width: 100px !important;
+	border-radius: 5px !important;
+	padding: 6px 9px;
+	margin: 0;
+	font-size: 12pt;
+	font-family: 'Nanum Gothic Coding', sans-serif;
+}
+
 .menudiv {
 	height: 2px;
 	width: 20px;
@@ -87,12 +108,12 @@ textarea:focus, input:focus {
 
 .info {
 	position: relative;
-	padding: 13px 11px;
+	padding: 17px 14px;
 }
 
 .info > p {
-	text-align: center;
-	padding: 14px 6px 12px;
+	text-align: left;
+	padding: 14px 9px 12px;
 	font-size: 16px;
 }
 
@@ -110,6 +131,21 @@ textarea:focus, input:focus {
 	position: relative;
 	top: -45px;
 	display: block;
+}
+
+.skills {
+	text-align: center !important;
+}
+
+.projectbuttons {
+	padding: 10px 0% 0;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.projectbuttons > button:first-of-type {
+	margin-right: 16px;
 }
 
 #menubutton {
@@ -133,7 +169,7 @@ textarea:focus, input:focus {
 	position: fixed;
 	width: 100%;
 	height: 100vh;
-	background-color: rgba(30, 30, 30, 0.7);
+	background-color: rgba(20, 20, 20, 0.8);
 	opacity: 0;
 	z-index: 4;
 	display: none;
@@ -144,7 +180,7 @@ textarea:focus, input:focus {
 	justify-content: space-around;
 	align-items: center;
 	height: 37px;
-	background-color: rgba(60, 60, 60, 0.9);
+	background-color: rgba(75, 75, 75, 0.9);
 	width: calc(100% - 20px);
 	position: fixed;
 	top: 55px;
@@ -152,7 +188,6 @@ textarea:focus, input:focus {
 	transform: scaleY(0);
 	transform-origin: center top;
 	padding: 0 10px;
-	border-top: 1px solid rgb(75, 75, 75);
 }
 
 #menu > a {
@@ -176,7 +211,7 @@ textarea:focus, input:focus {
 
 #homephoto > h2 {
 	position: absolute;
-	bottom: 120px;
+	bottom: 122px;
 	left: 20px;
 	color: #eeeeee;
 	font-size: 18pt;
@@ -184,7 +219,7 @@ textarea:focus, input:focus {
 
 #homephoto > p {
 	position: relative;
-	top: 135px;
+	top: 138px;
 	left: 20px;
 	width: 190px;
 	font-size: 11pt;
@@ -254,7 +289,7 @@ textarea:focus, input:focus {
 	border: none;
 	border-bottom: 1px solid #ccc;
 	font-size: 12pt;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Nanum Gothic Coding', sans-serif;
 }
 
 #contactform > textarea {
@@ -266,7 +301,7 @@ textarea:focus, input:focus {
 	border: none;
 	border-bottom: 1px solid #ccc;
 	font-size: 12pt;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Nanum Gothic Coding', sans-serif;
 }
 
 #contactform > p {
@@ -281,13 +316,8 @@ textarea:focus, input:focus {
 }
 
 #send {
-	border: 1px solid #ccc !important;
-	background-color: #fff !important;
-	height: 35px !important;
-	width: 100px !important;
 	margin-left: auto !important;
-	margin-bottom: 20px !important;
-	border-radius: 5px !important;
+	margin-bottom: 25px !important;
 }
 
 #send:active {
@@ -304,7 +334,15 @@ textarea:focus, input:focus {
 		font-size: 18pt;
 	}
 
-	nav > h2 {
+	a:hover {
+		cursor: pointer;
+	}
+
+	nav > a {
+		margin-left: 12px;
+	}
+
+	nav > a > h2 {
 		font-size: 22pt;
 	}
 
@@ -313,8 +351,13 @@ textarea:focus, input:focus {
 		border-radius: 5px !important;
 	}
 
+	button:hover, input[type="submit"]:hover {
+		cursor: pointer;
+		background-color: #ccc !important;
+	}
+
 	.info {
-		padding: 13px 20%;
+		padding: 17px 20%;
 	}
 
 	.info > h2 {
@@ -341,9 +384,9 @@ textarea:focus, input:focus {
 		padding: 8px;
 	}
 
-	#menu > a > p:hover {
+	#menu > a > p:hover, nav > a > h2:hover {
 		cursor: pointer;
-		color: #aaa;
+		color: #39796b;
 	}
 
 	#menushade {
@@ -366,22 +409,17 @@ textarea:focus, input:focus {
 	}
 
 	#homephoto > p {
-		top: 298px;
+		top: 301px;
 		left: 180px;
-		width: 800px;
+		width: 400px;
 		font-size: 18pt;
 	}
 
 	#about > p {
-		padding-bottom: 26px;
+		padding-bottom: 18px;
 	}
 
 	#contactform {
 		padding: 0 15%;
-	}
-
-	#send:hover {
-		cursor: pointer;
-		background-color: #ccc !important;
 	}
 }

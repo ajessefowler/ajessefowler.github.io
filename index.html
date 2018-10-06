@@ -4,7 +4,7 @@
 	<title>Jesse Fowler</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding:400,700|Nanum Gothic" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/animation.css">
 	<script type="text/javascript" src="js/zenscroll-min.js"></script>
@@ -15,7 +15,7 @@
 	<div id="menushade"></div>
 
 	<nav>
-		<h2>Jesse Fowler</h2>
+		<a href="#homephoto"><h2>Jesse Fowler</h2></a>
 		<div id="menubutton">
 			<div id="menutop" class="menudiv"></div>
 			<div id="menumiddle" class="menudiv"></div>
@@ -32,21 +32,23 @@
 
 	<div id="homephoto">
 		<h2>Hello!</h2>
-		<p>My name is Jesse Fowler.</p>
-		<p>I'm a full stack developer from Columbus, Ohio.</p>
+		<p>I'm Jesse Fowler, a full stack developer from Columbus, Ohio.</p>
 	</div>
 
 	<a class="anchor" id="abouta"></a>
 	<div class="info" id="about">
 		<h2>About</h2>
-		<p>Growing up in a suburb of Dayton, Ohio, I discovered a passion for computers at the age of four. I began studying computer science in early 2016, beginning with a Java class. I graduated from <strong>Columbus State Community College</strong> in the summer of 2018.</p>
+		<p>My passion for technology was sparked by my dad, who taught me how
+			to use a computer when I was four years old. I've enjoyed tinkering with
+			computers ever since.
+		</p>
 		<h2>Skills</h2>
 		<h3>Languages</h3>
-		<p> JavaScript, Java, Python, HTML, CSS, SQL</p>
+		<p class="skills"> JavaScript, Java, Python, HTML, CSS, SQL</p>
 		<h3>Frameworks and Libraries</h3>
-		<p>Django, jQuery</p>
+		<p class="skills">Django, jQuery</p>
 		<h3>Additional Skills</h3>
-		<p>Unit Testing, Git, UI/UX Design, Agile Development</p>
+		<p class="skills">Git, UI/UX Design, Unit Testing, Agile Development</p>
 	</div>
 
 	<div class="photo"></div>
@@ -54,10 +56,20 @@
 	<a class="anchor" id="projectsa"></a>
 	<div class="info" id="projects">
 		<h2>Projects</h2>
-		<h3>Speedcats Car Rental</h3>
-		<p>A full stack website created for a small rental car company, built with <strong>Django</strong> and <strong>JavaScript</strong>. Developed in two months for Columbus State Community College's capstone project. Allows customers to place, modify, and cancel reservations online with a user-friendly, material-inspired design.</p>
-		<h3>Thunderbolt Weather</h3>
-		<p>A local weather reference with a minimalistic, uncluttered interface, built with <strong>JavaScript</strong>. Provides current conditions, hourly forecast, daily forecast, and a precipitation radar. Allows location saving using local storage.</p>
+		<a href="https://still-fortress-58891.herokuapp.com"><h3>Speedcats Car Rental</h3></a>
+		<p>Columbus State Community College Capstone Project. Developed to modernize company website to allow users to place reservations, modify reservations, view inventories, and make payments. 
+			A responsive material design makes placing reservations faster and simpler to encourage more rentals. Complete administrator site eases employee workflow.</p>
+		<div class="projectbuttons">
+			<button>Source</button>
+			<button>Visit</button>
+		</div>
+		<a href="https://ajessefowler.github.io/thunderbolt-weather/"><h3>Thunderbolt Weather</h3></a>
+		<p>A modern, minimalistic take on a fully featured weather reference. An intuitive design and an interactive radar map allow users to quickly find all the information they need. 
+			Location history, favorite locations, unit settings, and fluid animations further improve user experience.</p>
+		<div class="projectbuttons">
+			<button>Source</button>
+			<button>Visit</button>
+		</div>
 	</div>
 
 	<div class="photo"></div>
