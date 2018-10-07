@@ -173,10 +173,10 @@ footer > a > i {
 	overflow-x: hidden;
 	overflow-y: scroll;
 	-webkit-overflow-scrolling: touch;
+	perspective: 1px;
 }
 
 #parallaxcontainer {
-	perspective: 1px;
 	transform-style: preserve-3d;
 }
 
