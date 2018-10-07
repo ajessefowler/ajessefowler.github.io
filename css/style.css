@@ -164,6 +164,10 @@ footer > a > i {
 	margin-right: 16px;
 }
 
+.scrollfix {
+	pointer-events: none;
+}
+
 #maincontainer {
 	position: fixed;
 	top: 0;
@@ -430,6 +434,10 @@ footer > a > i {
 
 	.photo {
 		height: 400px;
+	}
+
+	.scrollfix {
+		pointer-events: initial;
 	}
 
 	#contentcontainer {
