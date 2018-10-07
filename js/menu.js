@@ -5,18 +5,14 @@ document.addEventListener('DOMContentLoaded', function(event) {
 	const menu = document.getElementById('menu');
 	const menuLinks = menu.getElementsByTagName('a');
 
+	initScrolling();
+
 	document.getElementById('menubutton').addEventListener('click', function() {
 		if (!menuOpen) {
 			openMenu();
 		} else {
 			closeMenu();
 		}
-	});
-
-	initScrolling();
-
-	document.getElementById('menushade').addEventListener('click', function() {
-		closeMenu();
 	});
 
 	// Close menu when any menu link is clicked
@@ -29,32 +25,22 @@ document.addEventListener('DOMContentLoaded', function(event) {
 		}
 	}
 
-	// Animations for opening menu
 	function openMenu() {
 		menuOpen = true;
 		fadeInMenuItems();
 		document.getElementById('menu').style.animation = 'menuIn .2s ease forwards';
 		document.getElementById('menumiddle').style.animation = 'fadeOut .2s ease forwards';
-		document.getElementById('menushade').style.display = 'block';
-		document.getElementById('menushade').style.animation = 'fadeIn .2s ease forwards';
 		document.getElementById('menutop').style.animation = 'menuTopOpen .3s ease forwards';
 		document.getElementById('menubottom').style.animation = 'menuBottomOpen .3s ease forwards';
 	}
 
-	// Animations for closing menu
 	function closeMenu() {
 		menuOpen = false;
 		fadeOutMenuItems();
 		document.getElementById('menu').style.animation = 'menuOut .2s ease forwards';
 		document.getElementById('menumiddle').style.animation = 'fadeIn .4s ease forwards';
-		document.getElementById('menushade').style.animation = 'fadeOut .2s ease forwards';
 		document.getElementById('menutop').style.animation = 'menuTopClose .3s ease forwards';
 		document.getElementById('menubottom').style.animation = 'menuBottomClose .3s ease forwards';
-
-		// Remove menu shade after it is faded out
-		setTimeout(function() {
-			document.getElementById('menushade').style.display = 'none';
-		}, 200);
 	}
 
 	// Fade in menu links from left to right

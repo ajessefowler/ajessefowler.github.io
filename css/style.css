@@ -205,16 +205,6 @@ footer > a:first-of-type {
 	transform-origin: right center;
 }
 
-#menushade {
-	position: fixed;
-	width: 100%;
-	height: 100vh;
-	background-color: rgba(20, 20, 20, 0.8);
-	opacity: 0;
-	z-index: 4;
-	display: none;
-}
-
 #menu {
 	display: flex;
 	justify-content: space-around;
@@ -475,11 +465,6 @@ footer > a:first-of-type {
 	#menu > a > p:hover, nav > a > h2:hover {
 		cursor: pointer;
 		color: #489786;
-	}
-
-	#menushade {
-		height: 55px;
-		opacity: 1;
 	}
 
 	#menubutton {
