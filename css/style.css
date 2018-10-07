@@ -182,7 +182,6 @@ footer > a > i {
 	z-index: 1;
 	background-color: #eee;
 	top: 270px;
-	overflow: hidden;
 }
 
 #menubutton {
@@ -242,9 +241,9 @@ footer > a > i {
 #homephoto {
 	width: 100%;
 	background-image: url(../img/temp.jpg);
-	background-size: 100%;
+	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: right top;
+	background-position: center top;
 	filter: grayscale(100%);
 	display: flex;
 	flex: 1 0 auto;
