@@ -13,6 +13,8 @@ document.addEventListener('DOMContentLoaded', function(event) {
 		}
 	});
 
+	initScrolling();
+
 	document.getElementById('menushade').addEventListener('click', function() {
 		closeMenu();
 	});
@@ -31,10 +33,10 @@ document.addEventListener('DOMContentLoaded', function(event) {
 	function openMenu() {
 		menuOpen = true;
 		fadeInMenuItems();
-		document.getElementById('menu').style.animation = 'menuIn .3s ease forwards';
+		document.getElementById('menu').style.animation = 'menuIn .2s ease forwards';
 		document.getElementById('menumiddle').style.animation = 'fadeOut .2s ease forwards';
 		document.getElementById('menushade').style.display = 'block';
-		document.getElementById('menushade').style.animation = 'fadeIn .3s ease forwards';
+		document.getElementById('menushade').style.animation = 'fadeIn .2s ease forwards';
 		document.getElementById('menutop').style.animation = 'menuTopOpen .3s ease forwards';
 		document.getElementById('menubottom').style.animation = 'menuBottomOpen .3s ease forwards';
 	}
@@ -43,22 +45,22 @@ document.addEventListener('DOMContentLoaded', function(event) {
 	function closeMenu() {
 		menuOpen = false;
 		fadeOutMenuItems();
-		document.getElementById('menu').style.animation = 'menuOut .3s ease forwards';
-		document.getElementById('menumiddle').style.animation = 'fadeIn .5s ease forwards';
-		document.getElementById('menushade').style.animation = 'fadeOut .3s ease forwards';
+		document.getElementById('menu').style.animation = 'menuOut .2s ease forwards';
+		document.getElementById('menumiddle').style.animation = 'fadeIn .4s ease forwards';
+		document.getElementById('menushade').style.animation = 'fadeOut .2s ease forwards';
 		document.getElementById('menutop').style.animation = 'menuTopClose .3s ease forwards';
 		document.getElementById('menubottom').style.animation = 'menuBottomClose .3s ease forwards';
 
 		// Remove menu shade after it is faded out
 		setTimeout(function() {
 			document.getElementById('menushade').style.display = 'none';
-		}, 300);
+		}, 200);
 	}
 
 	// Fade in menu links from left to right
 	function fadeInMenuItems() {
 		let j;
-		let delay = 150;
+		let delay = 80;
 		const nodes = document.querySelectorAll('#menu > a > p');
 
 		// Fade in each menu link, adding a delay to the next link
@@ -81,3 +83,20 @@ document.addEventListener('DOMContentLoaded', function(event) {
 		}
 	}
 });
+
+function initScrolling() {
+	const mainScroller = zenscroll.createScroller(document.getElementById('maincontainer'));
+	const contentScroller = zenscroll.createScroller(document.getElementById('contentcontainer'));
+
+	function scrollToTop() {
+		mainScroller.to(document.getElementById('homephoto'));
+	}
+
+	function scrollToAbout() {
+		contentScroller.to(document.getElementById('about'));
+	}
+
+	document.getElementById('homelink').addEventListener('click', scrollToTop);
+	document.getElementById('headerlink').addEventListener('click', scrollToTop);
+	document.getElementById('aboutlink').addEventListener('click', scrollToAbout);
+}
