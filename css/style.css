@@ -336,19 +336,22 @@ footer > a > i {
 	margin: 0 9px;
 }
 
-#contactform > input {
+#contactform > textarea:not(:last-of-type) {
 	width: calc(100% - 18px);
 	height: 20px;
-	padding: 6px 9px;
+	padding: 6px 9px 3px;
 	margin: 0;
 	background-color: #eee;
 	border: none;
 	border-bottom: 1px solid #ccc;
 	font-size: 12pt;
 	font-family: 'Nanum Gothic Coding', sans-serif;
+	resize: none;
+	white-space: nowrap;
+	overflow-x: auto;
 }
 
-#contactform > textarea {
+#contactform > textarea:last-of-type {
 	width: calc(100% - 18px);
 	height: 150px;
 	padding: 8px 9px;
