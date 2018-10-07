@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
 			setTimeout(function() {
 				element.style.animation = 'fadeIn .3s ease forwards';
 			}, delay)
-			delay += 60;
+			delay += 35;
 		}
 	}
 

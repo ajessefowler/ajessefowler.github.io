@@ -4,18 +4,19 @@
 	<title>Jesse Fowler</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding:400,700|Nanum Gothic" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/animation.css">
-	<script type="text/javascript" src="js/zenscroll-min.js"></script>
-	<script type="text/javascript" src="js/menu.js"></script>
+	<script defer type="text/javascript" src="js/zenscroll-min.js"></script>
+	<script defer type="text/javascript" src="js/menu.js"></script>
 </head>
 <body>
 	<!-- Shade to emphasize menu when menu is open -->
 	<div id="menushade"></div>
 
 	<nav>
-		<a href="#homephoto"><h2>Jesse Fowler</h2></a>
+		<a href="#"><h2>Jesse Fowler</h2></a>
 		<div id="menubutton">
 			<div id="menutop" class="menudiv"></div>
 			<div id="menumiddle" class="menudiv"></div>
@@ -24,71 +25,77 @@
 	</nav>
 
 	<div id="menu">
-		<a href="#homephoto"><p>Home</p></a>
-		<a href="#abouta"><p>About</p></a>
+		<a href="#"><p>Home</p></a>
+		<a href="#about"><p>About</p></a>
 		<a href="#projectsa"><p>Projects</p></a>
 		<a href="#contacta"><p>Contact</p></a>
 	</div>
 
-	<div id="homephoto">
-		<h2>Hello!</h2>
-		<p>I'm Jesse Fowler, a full stack developer from Columbus, Ohio.</p>
-	</div>
-
-	<a class="anchor" id="abouta"></a>
-	<div class="info" id="about">
-		<h2>About</h2>
-		<p>My passion for technology was sparked by my dad, who taught me how
-			to use a computer when I was four years old. I've enjoyed tinkering with
-			computers ever since.
-		</p>
-		<h2>Skills</h2>
-		<h3>Languages</h3>
-		<p class="skills"> JavaScript, Java, Python, HTML, CSS, SQL</p>
-		<h3>Frameworks and Libraries</h3>
-		<p class="skills">Django, jQuery</p>
-		<h3>Additional Skills</h3>
-		<p class="skills">Git, UI/UX Design, Unit Testing, Agile Development</p>
-	</div>
-
-	<div class="photo"></div>
-
-	<a class="anchor" id="projectsa"></a>
-	<div class="info" id="projects">
-		<h2>Projects</h2>
-		<h3>Speedcats Car Rental</h3>
-		<p>Columbus State Community College Capstone Project. Developed to modernize company website to allow users to place reservations, modify reservations, view inventories, and make payments. 
-			A responsive material design makes placing reservations faster and simpler to encourage more rentals. Complete administrator site eases employee workflow.</p>
-		<div class="projectbuttons">
-			<button>Source</button>
-			<button>Visit</button>
+	<div id="maincontainer">
+		<div id="homephoto">
+			<h2>Hello!</h2>
+			<p>I'm Jesse Fowler, a full stack developer from Columbus, Ohio.</p>
 		</div>
-		<h3>Thunderbolt Weather</h3>
-		<p>A modern, minimalistic take on a fully featured weather reference. An intuitive design and an interactive radar map allow users to quickly find all the information they need. 
-			Location history, favorite locations, unit settings, and fluid animations further improve user experience.</p>
-		<div class="projectbuttons">
-			<button>Source</button>
-			<button>Visit</button>
+
+		<div id="contentcontainer">
+			<a class="anchor" id="abouta"></a>
+			<div class="info" id="about">
+				<h2>About</h2>
+				<p>My passion for technology was sparked by my dad, who taught me how
+					to use a computer when I was four years old. I've enjoyed tinkering with
+					computers ever since.
+				</p>
+				<h2>Skills</h2>
+				<h3>Languages</h3>
+				<p class="skills"> JavaScript, Java, Python, HTML, CSS, SQL</p>
+				<h3>Frameworks and Libraries</h3>
+				<p class="skills">Django, jQuery</p>
+				<h3>Additional Skills</h3>
+				<p class="skills">Git, UI/UX Design, Unit Testing, Agile Development</p>
+			</div>
+
+			<a class="anchor" id="projectsa"></a>
+			<div class="info" id="projects">
+				<h2>Projects</h2>
+				<h3>Speedcats Car Rental</h3>
+				<p>Columbus State Community College Capstone Project. Developed to modernize company website to allow users to place reservations, modify reservations, view inventories, and make payments. 
+					A responsive material design makes placing reservations faster and simpler to encourage more rentals. Complete administrator site eases employee workflow.</p>
+				<div class="projectbuttons">
+					<button>Source</button>
+					<button>Visit</button>
+				</div>
+				<h3>Thunderbolt Weather</h3>
+				<p>A modern, minimalistic take on a fully featured weather reference. An intuitive design and an interactive radar map allow users to quickly find all the information they need. 
+					Location history, favorite locations, unit settings, and fluid animations further improve user experience.</p>
+				<div class="projectbuttons">
+					<button>Source</button>
+					<button>Visit</button>
+				</div>
+			</div>
+
+			<a class="anchor" id="contacta"></a>
+			<div class="info" id="contact">
+				<h2>Contact</h2>
+				<p>Need a versatile developer with an impeccable attention to detail? Want to chat about technology? Use the form below to get in touch with me!</p>
+				<form name="contactform" id="contactform" action="https://formspree.io/ajessefowler@icloud.com" method="POST">
+					<p>Name</p>
+					<input type="text" name="name">
+					<p>Email</p>
+					<input type="email" name="email">
+					<p>Subject</p>
+					<input type="text" name="subject">
+					<p>Message</p>
+					<textarea name="message" id="message"></textarea>
+					<input type="submit" id="send" value="Send">
+				</form>
+			</div>
+
+			<footer>
+				<p>© Jesse Fowler 2018</p>
+				<a href="https://github.com/ajessefowler"><i class="fab fa-github-square fa-2x"></i></a>
+				<a href="https://www.linkedin.com/in/ajessefowler/"><i class="fab fa-linkedin fa-2x"></i></a>
+			</footer>
 		</div>
-	</div>
-
-	<div class="photo"></div>
-
-	<a class="anchor" id="contacta"></a>
-	<div class="info" id="contact">
-		<h2>Contact</h2>
-		<p>Need a versatile developer with an impeccable attention to detail? Want to chat about technology? Know any good restaurants? Use the form below to get in touch with me!</p>
-		<form name="contactform" id="contactform" action="https://formspree.io/ajessefowler@icloud.com" method="POST">
-			<p>Name</p>
-			<input type="text" name="name">
-			<p>Email</p>
-			<input type="email" name="email">
-			<p>Subject</p>
-			<input type="text" name="subject">
-			<p>Message</p>
-			<textarea name="message" id="message"></textarea>
-			<input type="submit" id="send" value="Send">
-		</form>
 	</div>
 </body>
 </html>

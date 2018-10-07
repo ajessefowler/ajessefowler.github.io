@@ -10,7 +10,7 @@ nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: rgba(60, 60, 60, 0.9);
+	background-color: rgb(37, 75, 67);
 	padding: 0 16px;
 	position: fixed;
 	top: 0;
@@ -92,6 +92,26 @@ input[type="submit"], button {
 	font-family: 'Nanum Gothic Coding', sans-serif;
 }
 
+footer {
+	height: 55px;
+	width: calc(100% - 30px);
+	background-color: #ddd;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-top: 1px solid #ccc;
+	padding: 0 15px;
+}
+
+footer > p {
+	margin-right: auto;
+}
+
+footer > a > i {
+	color: #444;
+	margin-left: 15px;
+}
+
 .menudiv {
 	height: 2px;
 	width: 20px;
@@ -100,14 +120,14 @@ input[type="submit"], button {
 }
 
 .photo {
-	height: 180px;
+	height: 200px;
 	width: 100%;
 	background-color: #555555;
 }
 
 .info {
 	position: relative;
-	padding: 17px 14px;
+	padding: 20px 14px 4px;
 }
 
 .info > p {
@@ -144,6 +164,22 @@ input[type="submit"], button {
 	margin-right: 16px;
 }
 
+#maincontainer {
+	perspective: 1px;
+	transform-style: preserve-3d;
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+#contentcontainer {
+	display: block;
+	position: absolute;
+	z-index: 1;
+	background-color: #eee;
+	top: 270px;
+}
+
 #menubutton {
 	display: flex;
 	flex-direction: column;
@@ -176,7 +212,7 @@ input[type="submit"], button {
 	justify-content: space-around;
 	align-items: center;
 	height: 37px;
-	background-color: rgba(75, 75, 75, 0.9);
+	background-color: rgb(31, 65, 58);
 	width: calc(100% - 20px);
 	position: fixed;
 	top: 55px;
@@ -200,14 +236,24 @@ input[type="submit"], button {
 
 #homephoto {
 	position: relative;
-	height: 255px;
+	height: 270px;
 	width: 100%;
 	background-color: #555555;
+	background-image: url(../img/temp.jpg);
+	background-size: 100%;
+	background-position: center -28%;
+	filter: grayscale(100%);
+	display: flex;
+	flex: 1 0 auto;
+	position: relative;
+	height: 100vh;
+	transform: translateZ(-5px) scale(6);
+	z-index: -1;
 }
 
 #homephoto > h2 {
 	position: absolute;
-	bottom: 122px;
+	top: 122px;
 	left: 20px;
 	color: #eeeeee;
 	font-size: 18pt;
@@ -215,7 +261,7 @@ input[type="submit"], button {
 
 #homephoto > p {
 	position: relative;
-	top: 138px;
+	top: 150px;
 	left: 20px;
 	width: 190px;
 	font-size: 11pt;
@@ -224,6 +270,7 @@ input[type="submit"], button {
 
 #about > p {
 	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 #about > p:first-of-type {
@@ -243,10 +290,6 @@ input[type="submit"], button {
 	margin-bottom: 8px;
 }
 
-#projects {
-	margin-bottom: 5px;
-}
-
 #projects > img {
 	width: 60%;
 	padding: 20px 20% 8px;
@@ -263,6 +306,10 @@ input[type="submit"], button {
 
 #projects > h2 {
 	margin-bottom: 18px;
+}
+
+#contact {
+	padding-bottom: 40px;
 }
 
 #contact > p {
@@ -358,8 +405,14 @@ input[type="submit"], button {
 		background-color: #ccc !important;
 	}
 
+	footer {
+		justify-content: center;
+		width: calc(100% - 100px);
+		padding: 0 50px;
+	}
+
 	.info {
-		padding: 17px 20%;
+		padding: 17px 20% 0;
 	}
 
 	.info > h2 {
@@ -371,6 +424,10 @@ input[type="submit"], button {
 		height: 400px;
 	}
 
+	#contentcontainer {
+		top: 600px;
+	}
+
 	#menu {
 		height: 55px;
 		background-color: rgba(60, 60, 60, 0);
@@ -378,7 +435,6 @@ input[type="submit"], button {
 		top: 0;
 		right: 4px;
 		transform: scaleY(1);
-		border-top: none;
 	}
 
 	#menu > a > p {
@@ -388,7 +444,7 @@ input[type="submit"], button {
 
 	#menu > a > p:hover, nav > a > h2:hover {
 		cursor: pointer;
-		color: #39796b;
+		color: #489786;
 	}
 
 	#menushade {
@@ -401,17 +457,17 @@ input[type="submit"], button {
 	}
 
 	#homephoto {
-		height: 570px;
+		background-position: center 35%;
 	}
 
 	#homephoto > h2 {
-		bottom: 275px;
+		top: 265px;
 		left: 180px;
 		font-size: 28pt;
 	}
 
 	#homephoto > p {
-		top: 301px;
+		top: 308px;
 		left: 180px;
 		width: 400px;
 		font-size: 18pt;
@@ -419,6 +475,10 @@ input[type="submit"], button {
 
 	#about > p {
 		padding-bottom: 18px;
+	}
+
+	#about > p:last-of-type {
+		padding-bottom: 0px;
 	}
 
 	#contactform {
