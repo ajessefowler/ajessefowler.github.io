@@ -327,6 +327,10 @@ footer > a:first-of-type {
 	margin-bottom: 18px;
 }
 
+#projects > h3:not(:first-of-type) {
+	margin-top: 40px;
+}
+
 #contact {
 	padding-bottom: 25px;
 }
