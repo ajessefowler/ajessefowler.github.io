@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
 	document.querySelector('body').ontouchstart = function() {
 		const elements = document.querySelectorAll('.scrollfix');
 		for (let i = 0; i < elements.length; i++) {
-			elements[i].style.pointerEvents = 'auto';
+			elements[i].style.pointerEvents = 'initial';
 		}
 	}
 
