@@ -182,6 +182,7 @@ footer > a > i {
 	z-index: 1;
 	background-color: #eee;
 	top: 270px;
+	border-radius: 12px 12px 0 0;
 }
 
 #menubutton {
@@ -243,7 +244,7 @@ footer > a > i {
 	background-image: url(../img/temp.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center top;
+	background-position: left top;
 	filter: grayscale(100%);
 	display: flex;
 	flex: 1 0 auto;
