@@ -164,10 +164,6 @@ footer > a > i {
 	margin-right: 16px;
 }
 
-.scrollfix {
-	pointer-events: none;
-}
-
 #maincontainer {
 	position: fixed;
 	top: 0;
@@ -178,6 +174,7 @@ footer > a > i {
 	transform-style: preserve-3d;
 	overflow-x: hidden;
 	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
 }
 
 #contentcontainer {
@@ -252,7 +249,9 @@ footer > a > i {
 	filter: grayscale(100%);
 	display: flex;
 	flex: 1 0 auto;
-	position: relative;
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0px;
 	height: 100vh;
 	transform: translateZ(-3px) scale(4);
 	z-index: -1;
@@ -434,10 +433,6 @@ footer > a > i {
 
 	.photo {
 		height: 400px;
-	}
-
-	.scrollfix {
-		pointer-events: initial;
 	}
 
 	#contentcontainer {

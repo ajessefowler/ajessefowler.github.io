@@ -5,29 +5,6 @@ document.addEventListener('DOMContentLoaded', function(event) {
 	const menu = document.getElementById('menu');
 	const menuLinks = menu.getElementsByTagName('a');
 
-	document.querySelector('body').ontouchstart = function() {
-		const elements = document.querySelectorAll('.scrollfix');
-		for (let i = 0; i < elements.length; i++) {
-			elements[i].style.pointerEvents = 'initial';
-		}
-	}
-
-	document.querySelector('body').ontouchmove = function() {
-		const elements = document.querySelectorAll('.scrollfix');
-		for (let i = 0; i < elements.length; i++) {
-			elements[i].style.pointerEvents = 'none';
-		}
-	}
-
-	document.querySelector('body').ontouchend = function() {
-		const elements = document.querySelectorAll('.scrollfix');
-		for (let i = 0; i < elements.length; i++) {
-			setTimeout(function() {
-				elements[i].style.pointerEvents = 'none';
-			}, 0);
-		}
-	}
-
 	document.getElementById('menubutton').addEventListener('click', function() {
 		if (!menuOpen) {
 			openMenu();
