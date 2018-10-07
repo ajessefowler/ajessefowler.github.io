@@ -170,11 +170,14 @@ footer > a > i {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	perspective: 1px;
-	transform-style: preserve-3d;
 	overflow-x: hidden;
 	overflow-y: scroll;
 	-webkit-overflow-scrolling: touch;
+}
+
+#parallaxcontainer {
+	perspective: 1px;
+	transform-style: preserve-3d;
 }
 
 #contentcontainer {
