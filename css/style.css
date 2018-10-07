@@ -130,13 +130,13 @@ footer > a > i {
 	padding: 20px 14px 4px;
 }
 
-.info > p {
+.info > p, #skills > p {
 	text-align: left;
 	padding: 14px 9px 12px;
 	font-size: 16px;
 }
 
-.info > h2 {
+.info > h2, #skills > h2 {
 	width: calc(100% - 22px);
 	color: #333;
 	padding-bottom: 5px;
@@ -178,6 +178,7 @@ footer > a > i {
 	z-index: 1;
 	background-color: #eee;
 	top: 270px;
+	-webkit-overflow-scrolling: touch;
 }
 
 #menubutton {
@@ -235,18 +236,17 @@ footer > a > i {
 }
 
 #homephoto {
-	position: relative;
-	height: 270px;
 	width: 100%;
 	background-color: #555555;
 	background-image: url(../img/temp.jpg);
 	background-size: 100%;
-	background-position: center -28%;
+	background-repeat: no-repeat;
+	background-position: right top;
 	filter: grayscale(100%);
 	display: flex;
 	flex: 1 0 auto;
 	position: relative;
-	height: 100vh;
+	height: inherit;
 	transform: translateZ(-5px) scale(6);
 	z-index: -1;
 }
@@ -277,17 +277,21 @@ footer > a > i {
 	padding-bottom: 22px;
 }
 
-#about > h2 {
+#about > h2, #skills > h2 {
 	margin-bottom: 18px;
 }
 
-#about > h3, #projects > h3 {
+#about > h3, #projects > h3, #skills > h3 {
 	padding: 0 9px;
 	color: rgb(73, 73, 73);
 }
 
 #about > h2:first-of-type {
 	margin-bottom: 8px;
+}
+
+#skills {
+	padding-top: 17px;
 }
 
 #projects > img {
