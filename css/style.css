@@ -170,14 +170,10 @@ footer > a > i {
 	left: 0;
 	right: 0;
 	bottom: 0;
+	perspective: 1px;
+	transform-style: preserve-3d;
 	overflow-x: hidden;
 	overflow-y: scroll;
-	-webkit-overflow-scrolling: touch;
-	perspective: 1px;
-}
-
-#parallaxcontainer {
-	transform-style: preserve-3d;
 }
 
 #contentcontainer {
@@ -252,9 +248,7 @@ footer > a > i {
 	filter: grayscale(100%);
 	display: flex;
 	flex: 1 0 auto;
-	position: sticky;
-	position: -webkit-sticky;
-	top: 0px;
+	position: relative;
 	height: 100vh;
 	transform: translateZ(-3px) scale(4);
 	z-index: -1;
