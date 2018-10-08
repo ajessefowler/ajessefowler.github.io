@@ -91,12 +91,14 @@ function initScrolling() {
 
 function initModal() {
 	let i;
+	let viewHeight = window.innerHeight - 97;
 	const elements = document.querySelectorAll('.modalimage');
 	const modal = document.getElementById('modal');
 
 	for (i = 0; i < elements.length; i++) {
 		elements[i].addEventListener('click', function() {
 			document.getElementById('modalimage').src = this.src;
+			document.getElementById('modalimage').style.height = viewHeight + 'px';
 			modal.style.display = 'flex';
 			modal.style.animation = 'fadeIn .3s ease forwards';
 		});
