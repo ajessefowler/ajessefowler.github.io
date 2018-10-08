@@ -52,7 +52,7 @@ h3 {
 	cursor: default;
 	color: #222;
 	font-family: 'Nanum Gothic Coding', sans-serif;
-	font-size: 20px;
+	font-size: 22px;
 	margin: 13px 0 0;
 	text-transform: uppercase;
 }
@@ -147,7 +147,7 @@ footer > a:first-of-type {
 	margin: 0 9px;
 	border-bottom: 1px solid #ccc;
 	text-align: left;
-	font-size: 26px;
+	font-size: 30px;
 }
 
 .anchor {
@@ -280,7 +280,7 @@ footer > a:first-of-type {
 
 #about > h3, #projects > h3, #skills > h3 {
 	padding: 0 9px;
-	color: rgb(73, 73, 73);
+	color: rgb(51, 104, 92);
 }
 
 #about > h2:first-of-type {
@@ -306,7 +306,7 @@ footer > a:first-of-type {
 	width: 50%;
 	margin: 20px 5px 10px;
 	border-radius: 5px;
-	box-shadow: 0 1px 6px rgb(60, 60, 60);
+	box-shadow: 0 1px 6px rgb(80, 80, 80);
 }
 
 #projects > p {
@@ -431,7 +431,7 @@ footer > a:first-of-type {
 		padding: 17px 20% 0;
 	}
 
-	.info > h2 {
+	.info > h2, #skills > h2 {
 		font-size: 28pt;
 		margin-bottom: 16px;
 	}
@@ -464,7 +464,7 @@ footer > a:first-of-type {
 
 	#menu > a > p:hover, nav > a > h2:hover {
 		cursor: pointer;
-		color: #489786;
+		color: #4fa794;
 	}
 
 	#menubutton {
