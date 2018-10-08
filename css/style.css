@@ -211,14 +211,14 @@ footer > a:first-of-type {
 }
 
 #closemodal {
-	height: 40px !important;
+	height: 36px !important;
 	width: 90px !important;
 	background-color: rgb(189, 45, 43);
 	border: none !important;
 	position: relative;
-	bottom: 20px;
+	bottom: 18px;
 	display: flex;
-	padding: 0 11px 0 13px;
+	padding: 0 11px 0 12px;
 	justify-content: space-between;
 	align-items: center;
 }
@@ -250,13 +250,13 @@ footer > a:first-of-type {
 	align-items: center;
 	height: 37px;
 	background-color: rgb(31, 65, 58);
-	width: calc(100% - 20px);
+	width: calc(100% - 12px);
 	position: fixed;
 	top: 55px;
 	z-index: 5;
 	transform: scaleY(0);
 	transform-origin: center top;
-	padding: 0 10px;
+	padding: 0 6px;
 }
 
 #menu > a {
