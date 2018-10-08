@@ -215,7 +215,7 @@ footer > a:first-of-type {
 	width: 90px !important;
 	background-color: rgb(189, 45, 43);
 	border: none !important;
-	position: absolute;
+	position: relative;
 	bottom: 20px;
 	display: flex;
 	padding: 0 13px;
