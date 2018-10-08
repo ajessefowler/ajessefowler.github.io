@@ -218,7 +218,7 @@ footer > a:first-of-type {
 	position: relative;
 	bottom: 20px;
 	display: flex;
-	padding: 0 13px;
+	padding: 0 11px 0 13px;
 	justify-content: space-between;
 	align-items: center;
 }
