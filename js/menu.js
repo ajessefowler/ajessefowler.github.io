@@ -2,10 +2,15 @@
 document.addEventListener('DOMContentLoaded', function(event) {	
 	let i;
 	let menuOpen = false;
+	let screenWidth = window.screen.availWidth;
 	const menu = document.getElementById('menu');
 	const menuLinks = menu.getElementsByTagName('a');
 
 	initScrolling();
+
+	if (screenWidth < 768) {
+		initModal();
+	}
 
 	document.getElementById('menubutton').addEventListener('click', function() {
 		if (!menuOpen) {
@@ -19,9 +24,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
 	if (window.screen.availWidth < 768) {
 		for (i = 0; i < menuLinks.length; i++) {
 			const element = menuLinks[i];
-			element.addEventListener('click', function(event) {
-				closeMenu();
-			});
+			element.addEventListener('click', closeMenu);
 		}
 	}
 
@@ -82,7 +85,27 @@ function initScrolling() {
 		contentScroller.to(document.getElementById('about'));
 	}
 
-	document.getElementById('homelink').addEventListener('click', scrollToTop);
 	document.getElementById('headerlink').addEventListener('click', scrollToTop);
 	document.getElementById('aboutlink').addEventListener('click', scrollToAbout);
+}
+
+function initModal() {
+	let i;
+	const elements = document.querySelectorAll('.modalimage');
+	const modal = document.getElementById('modal');
+
+	for (i = 0; i < elements.length; i++) {
+		elements[i].addEventListener('click', function() {
+			document.getElementById('modalimage').src = this.src;
+			modal.style.display = 'flex';
+			modal.style.animation = 'fadeIn .3s ease forwards';
+		});
+	}
+
+	document.getElementById('closemodal').addEventListener('click', function() {
+		modal.style.animation = 'fadeOut .3s ease forwards';
+		setTimeout(function() {
+			modal.style.display = 'none';
+		}, 300)
+	});
 }

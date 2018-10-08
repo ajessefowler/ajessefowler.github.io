@@ -21,9 +21,14 @@
 		</div>
 	</nav>
 
+	<div id="modal">
+		<img id="modalimage">
+		<i class="far fa-times-circle" id="closemodal"></i>
+	</div>
+
 	<div id="menu">
-		<a><p id="homelink">Home</p></a>
 		<a><p id="aboutlink">About</p></a>
+		<a><p id="skillslink">Skills</p></a>
 		<a href="#projectsa"><p>Projects</p></a>
 		<a href="#contacta"><p>Contact</p></a>
 	</div>
@@ -57,22 +62,24 @@
 			<div class="info" id="projects">
 				<h2>Projects</h2>
 				<h3>Speedcats Car Rental</h3>
+				<p><b>Django, PostgreSQL, JavaScript</b></p>
 				<p>Columbus State Community College Capstone Project. Developed to modernize company website to allow users to place reservations, modify reservations, view inventories, and make payments. 
 					A responsive material design makes placing reservations faster and simpler to encourage more rentals. Complete administrator site eases employee workflow.</p>
 				<div class="projectimages">
-					<img src="img/speedcats1.PNG">
-					<img src="img/speedcats2.PNG">
+					<img src="img/speedcats1.PNG" class="modalimage">
+					<img src="img/speedcats2.PNG" class="modalimage">
 				</div>
 				<div class="projectbuttons">
 					<button onclick="window.open('https://github.com/ajessefowler/speedcats-car-rental', '_blank');";>Source</button>
 					<button onclick="window.open('https://speedcats.herokuapp.com', '_blank');";>Visit</button>
 				</div>
 				<h3>Thunderbolt Weather</h3>
+				<p><b>HTML, CSS, JavaScript, Node.js</b></p>
 				<p>A modern, minimalistic take on a fully featured weather reference. An intuitive design and an interactive radar map allow users to quickly find all the information they need. 
 					Location history, favorite locations, unit settings, and fluid animations further improve user experience.</p>
 				<div class="projectimages">
-					<img src="img/tbolt1.PNG">
-					<img src="img/tbolt2.PNG">
+					<img src="img/tbolt1.PNG" class="modalimage">
+					<img src="img/tbolt2.PNG" class="modalimage">
 				</div>
 				<div class="projectbuttons">
 					<button onclick="window.open('https://github.com/ajessefowler/thunderbolt-weather', '_blank');";>Source</button>

@@ -186,6 +186,36 @@ footer > a:first-of-type {
 	z-index: 1;
 	background-color: #eee;
 	top: 270px;
+	border-radius: 12px 12px 0 0;
+}
+
+#modal {
+	background-color: rgba(20, 20, 20, 0.8);
+	width: 100%;
+	height: calc(100vh - 20px);
+	top: 0;
+	left: 0;
+	position: fixed;
+	z-index: 15;
+	opacity: 0;
+	display: none;
+	justify-content: center;
+	align-items: flex-start;
+	padding-top: 20px;
+}
+
+#modal > img {
+	width: 85%;
+	border-radius: 5px;
+	box-shadow: 0 1px 10px rgb(5, 5, 5);
+}
+
+#modal > i {
+	font-size: 28pt;
+	color: #eee;
+	position: fixed;
+	bottom: 20px;
+	right: 25px;
 }
 
 #menubutton {
@@ -304,17 +334,21 @@ footer > a:first-of-type {
 
 .projectimages > img {
 	width: 50%;
-	margin: 20px 5px 10px;
+	margin: 13px 5px 10px;
 	border-radius: 5px;
 	box-shadow: 0 1px 6px rgb(80, 80, 80);
 }
 
 #projects > p {
-	padding-bottom: 4px;
+	padding-bottom: 10px;
 }
 
 #projects > h2 {
 	margin-bottom: 18px;
+}
+
+#projects > h3 {
+	padding-bottom: 1px;
 }
 
 #projects > h3:not(:first-of-type) {
@@ -446,6 +480,7 @@ footer > a:first-of-type {
 
 	#contentcontainer {
 		top: 600px;
+		border-radius: 0;
 	}
 
 	#menu {
