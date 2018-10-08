@@ -61,7 +61,7 @@ textarea {
 	resize: none;
 }
 
-textarea, input[type="text"], input[type="submit"], input[type="email"] {
+textarea, input[type="text"], input[type="submit"], input[type="email"], button {
 	-webkit-appearance: none;
 	border-radius: 0;
 }
@@ -82,10 +82,10 @@ textarea:focus, input:focus {
 
 input[type="submit"], button {
 	border: 1px solid #ccc !important;
-	background-color: #fff !important;
-	height: 35px !important;
-	width: 100px !important;
-	border-radius: 5px !important;
+	background-color: #fff;
+	height: 35px;
+	width: 100px;
+	border-radius: 5px;
 	padding: 6px 9px;
 	margin: 0;
 	font-size: 12pt;
@@ -199,22 +199,32 @@ footer > a:first-of-type {
 	z-index: 15;
 	opacity: 0;
 	display: none;
-	justify-content: center;
-	align-items: flex-start;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
 	padding-top: 20px;
 }
 
 #modal > img {
-	border-radius: 5px;
+	border-radius: 7px;
 	box-shadow: 0 1px 10px rgb(5, 5, 5);
 }
 
-#modal > i {
-	font-size: 28pt;
-	color: #eee;
-	position: fixed;
+#closemodal {
+	height: 40px !important;
+	width: 90px !important;
+	background-color: rgb(189, 45, 43);
+	border: none !important;
+	position: absolute;
 	bottom: 20px;
-	right: 25px;
+	display: flex;
+	padding: 0 13px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#closemodal > p, #closemodal > i {
+	color: #eee;
 }
 
 #menubutton {

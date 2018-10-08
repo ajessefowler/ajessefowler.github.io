@@ -91,7 +91,7 @@ function initScrolling() {
 
 function initModal() {
 	let i;
-	let viewHeight = window.innerHeight - 97;
+	let viewHeight = window.innerHeight - 60;
 	const elements = document.querySelectorAll('.modalimage');
 	const modal = document.getElementById('modal');
 
