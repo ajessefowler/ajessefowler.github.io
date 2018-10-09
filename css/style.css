@@ -158,7 +158,8 @@ footer > a:first-of-type {
 
 
 .projectbuttons {
-	padding: 10px 0% 0;
+	padding: 10px 0 0;
+	margin-right: 9px;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
@@ -179,7 +180,7 @@ footer > a:first-of-type {
 }
 
 #send > i {
-	margin-right: 16px;
+	margin-right: 14px;
 }
 
 #maincontainer {
