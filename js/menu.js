@@ -99,6 +99,19 @@ function initScrolling() {
 	document.getElementById('contactlink').addEventListener('click', function() {
 		scrollToElement('contact');
 	});
+
+	// Scroll animations
+	document.getElementById('maincontainer').addEventListener('scroll', function() {
+		console.log(document.getElementById('contentcontainer').getBoundingClientRect().top);
+
+		if (document.getElementById('contentcontainer').getBoundingClientRect().top < 55) {
+			document.querySelector('nav').style.backgroundColor = 'rgba(20, 20, 20, 0.9)';
+			document.querySelector('nav > a > h2').style.opacity = '1.0';
+		} else {
+			document.querySelector('nav').style.backgroundColor = 'transparent';
+			document.querySelector('nav > a > h2').style.opacity = '0.0';
+		}
+	})
 }
 
 function initMainScrolling() {

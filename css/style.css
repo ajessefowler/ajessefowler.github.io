@@ -10,11 +10,12 @@ nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: rgb(37, 75, 67);
+	background-color: transparent;
 	padding: 0 16px;
 	position: fixed;
 	top: 0;
 	z-index: 5;
+	transition: background-color .3s ease;
 }
 
 nav > a {
@@ -24,6 +25,8 @@ nav > a {
 nav > a > h2 {
 	color: #eeeeee;
 	font-size: 20pt;
+	opacity: 0;
+	transition: opacity .3s ease;
 }
 
 a {
@@ -266,14 +269,14 @@ footer > a:first-of-type {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	background-color: rgb(31, 65, 58);
+	background-color: rgba(20, 20, 20, 0.9);
 	width: calc(100% - 12px);
 	position: fixed;
-	top: 55px;
-	z-index: 5;
+	top: 0;
+	z-index: 4;
 	transform: scaleY(0);
 	transform-origin: center top;
-	padding: 0 6px 10px;
+	padding: 55px 6px 10px;
 }
 
 #menu > a {
@@ -283,7 +286,7 @@ footer > a:first-of-type {
 }
 
 #menu > a:not(:last-of-type) {
-	border-bottom: 1px solid rgb(23, 48, 42);
+	border-bottom: 1px solid #333;
 }
 
 #menu > a > h3 {
@@ -494,10 +497,7 @@ footer > a:first-of-type {
 
 	nav > a > h2 {
 		font-size: 22pt;
-	}
-
-	nav > a > h2, #menu > a > h3 {
-		transition: color .1s ease;
+		transition: opacity .3s ease, color .1s ease;
 	}
 
 	textarea:hover, input:hover {
@@ -563,6 +563,8 @@ footer > a:first-of-type {
 		flex-direction: row;
 		justify-content: space-between;
 		transform: scaleY(1);
+		padding: 0 6px 10px;
+		z-index: 5;
 	}
 
 	#menu > a {
@@ -576,6 +578,7 @@ footer > a:first-of-type {
 	#menu > a > h3 {
 		opacity: 1;
 		padding: 8px;
+		transition: color .1s ease;
 	}
 
 	#menu > a > h3:hover, nav > a > h2:hover {
