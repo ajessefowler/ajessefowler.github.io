@@ -93,22 +93,24 @@ function initScrolling() {
 // Displays larger version image in modal when image is clicked
 function initModal() {
 	let i;
-	let sizeSet = false;
-	let viewHeight = window.innerHeight - 90;
+	let viewHeight = window.innerHeight - 70;
 	const elements = document.querySelectorAll('.modalimage');
 	const modal = document.getElementById('modal');
 
 	for (i = 0; i < elements.length; i++) {
 		elements[i].addEventListener('click', function() {
 			document.getElementById('modalimage').src = this.src;
+			document.getElementById('modalimage').style.height = viewHeight + 'px';
 			modal.style.display = 'flex';
-			if (document.getElementById('modalimage').offsetWidth < window.innerWidth && !sizeSet) {
-				sizeSet = true;
+
+			if (document.getElementById('modalimage').offsetWidth < window.innerWidth) {
+				document.getElementById('modalimage').style.width = 'auto';
 				document.getElementById('modalimage').style.height = viewHeight + 'px';
-			} else if (!sizeSet) {
-				sizeSet = true;
+			} else {
+				document.getElementById('modalimage').style.height = 'auto';
 				document.getElementById('modalimage').style.width = (window.innerWidth - 20) + 'px';
 			}
+
 			modal.style.animation = 'fadeIn .3s ease forwards';
 		});
 	}
