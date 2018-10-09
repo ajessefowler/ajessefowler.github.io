@@ -263,9 +263,9 @@ footer > a:first-of-type {
 
 #menu {
 	display: flex;
-	justify-content: space-around;
+	flex-direction: column;
+	justify-content: space-between;
 	align-items: center;
-	height: 37px;
 	background-color: rgb(31, 65, 58);
 	width: calc(100% - 12px);
 	position: fixed;
@@ -273,11 +273,17 @@ footer > a:first-of-type {
 	z-index: 5;
 	transform: scaleY(0);
 	transform-origin: center top;
-	padding: 0 6px;
+	padding: 0 6px 10px;
 }
 
 #menu > a {
+	width: 85%;
 	text-decoration: none;
+	padding: 8px 0;
+}
+
+#menu > a:not(:last-of-type) {
+	border-bottom: 1px solid rgb(23, 48, 42);
 }
 
 #menu > a > p {
@@ -334,7 +340,7 @@ footer > a:first-of-type {
 	margin-bottom: 18px;
 }
 
-#about > h3, #projects > h3, #skills > h3 {
+#about > h3, #projects > h3, #skills > h3, #education > h3 {
 	padding: 0 9px;
 	color: rgb(51, 104, 92);
 }
@@ -347,7 +353,7 @@ footer > a:first-of-type {
 	padding-top: 17px;
 }
 
-#skills > p, #projects > p {
+#skills > p, #projects > p, #education > p {
 	padding: 5px 9px 12px;
 }
 
@@ -395,6 +401,7 @@ footer > a:first-of-type {
 
 #contact {
 	padding-bottom: 25px;
+	padding-top: 32px;
 }
 
 #contact > p {
@@ -544,10 +551,20 @@ footer > a:first-of-type {
 	#menu {
 		height: 55px;
 		background-color: rgba(60, 60, 60, 0);
-		width: 400px;
+		width: 500px;
 		top: 0;
-		right: 4px;
+		right: 15px;
+		flex-direction: row;
+		justify-content: space-between;
 		transform: scaleY(1);
+	}
+
+	#menu > a {
+		width: auto;
+	}
+
+	#menu > a:not(:last-of-type) {
+		border-bottom: none;
 	}
 
 	#menu > a > p {
@@ -591,6 +608,7 @@ footer > a:first-of-type {
 
 	#contact {
 		padding-bottom: 40px;
+		padding-top: 29px;
 	}
 
 	#contactform {
