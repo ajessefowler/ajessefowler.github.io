@@ -175,8 +175,18 @@ footer > a:first-of-type {
 	align-items: center;
 }
 
+.projectbutton > p {
+	color: #444; 
+}
+
 .projectbutton > i {
 	margin-right: 10px;
+	color: #444;
+}
+
+.modalimage {
+	border-radius: 5px;
+	box-shadow: 0 1px 6px rgb(80, 80, 80);
 }
 
 #send > i {
@@ -205,9 +215,8 @@ footer > a:first-of-type {
 }
 
 #modal {
-	background-color: rgba(20, 20, 20, 0.8);
 	width: 100%;
-	height: calc(100vh - 20px);
+	height: 100vh;
 	top: 0;
 	left: 0;
 	position: fixed;
@@ -217,28 +226,22 @@ footer > a:first-of-type {
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
-	padding-top: 20px;
+}
+
+#modalbg {
+	background-color: rgba(20, 20, 20, 0.8);
+	width: 100%;
+	height: inherit;
+	position: fixed;
+	top: 0;
+	left: 0;
 }
 
 #modal > img {
 	border-radius: 7px;
 	box-shadow: 0 1px 10px rgb(5, 5, 5);
-}
-
-#closemodal {
-	width: 90px !important;
-	background-color: rgb(189, 45, 43);
-	border: 1px solid rgb(128, 29, 27) !important;
-	position: relative;
-	bottom: 18px;
-	display: flex;
-	padding: 0 11px 0 12px;
-	justify-content: space-between;
-	align-items: center;
-}
-
-#closemodal > p, #closemodal > i {
-	color: #eee;
+	margin-top: 20px;
+	z-index: 16;
 }
 
 #menubutton {
@@ -357,8 +360,6 @@ footer > a:first-of-type {
 
 .projectimages > img {
 	width: calc(50% - 15px);
-	border-radius: 5px;
-	box-shadow: 0 1px 6px rgb(80, 80, 80);
 }
 
 .projectimages > img:first-of-type {
@@ -370,7 +371,9 @@ footer > a:first-of-type {
 }
 
 #projects > img {
-	width: 100%;
+	width: calc(100% - 20px);
+	position: relative;
+	left: 10px;
 }
 
 #projects > p {
@@ -479,9 +482,17 @@ footer > a:first-of-type {
 		font-size: 22pt;
 	}
 
+	nav > a > h2, #menu > a > p {
+		transition: color .1s ease;
+	}
+
 	textarea:hover, input:hover {
 		border: 1px solid #ccc !important;
 		border-radius: 5px !important;
+	}
+
+	button, input[type="submit"] {
+		transition: background-color .1s ease;
 	}
 
 	button:hover, input[type="submit"]:hover {
@@ -518,6 +529,10 @@ footer > a:first-of-type {
 
 	.projectimages > img:last-of-type {
 		margin: 20px 0 10px 15px;
+	}
+
+	.projectbutton > p:hover {
+		cursor: pointer;
 	}
 
 	#contentcontainer {

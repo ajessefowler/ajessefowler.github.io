@@ -93,7 +93,7 @@ function initScrolling() {
 // Displays larger version image in modal when image is clicked
 function initModal() {
 	let i;
-	let viewHeight = window.innerHeight - 58;
+	let viewHeight = window.innerHeight - 90;
 	const elements = document.querySelectorAll('.modalimage');
 	const modal = document.getElementById('modal');
 
@@ -106,7 +106,7 @@ function initModal() {
 		});
 	}
 
-	document.getElementById('closemodal').addEventListener('click', function() {
+	document.getElementById('modalbg').addEventListener('click', function() {
 		modal.style.animation = 'fadeOut .3s ease forwards';
 		setTimeout(function() {
 			modal.style.display = 'none';
