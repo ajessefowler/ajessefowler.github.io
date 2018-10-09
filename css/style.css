@@ -83,7 +83,7 @@ textarea:focus, input:focus {
 input[type="submit"], button {
 	border: 1px solid #ccc !important;
 	background-color: #fff;
-	height: 35px;
+	height: 36px;
 	width: 100px;
 	border-radius: 5px;
 	padding: 6px 9px;
@@ -168,6 +168,20 @@ footer > a:first-of-type {
 	margin-right: 16px;
 }
 
+.projectbutton {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.projectbutton > i {
+	margin-right: 10px;
+}
+
+#send > i {
+	margin-right: 16px;
+}
+
 #maincontainer {
 	position: fixed;
 	top: 0;
@@ -186,7 +200,7 @@ footer > a:first-of-type {
 	z-index: 1;
 	background-color: #eee;
 	top: 270px;
-	border-radius: 12px 12px 0 0;
+	border-radius: 14px 14px 0 0;
 }
 
 #modal {
@@ -211,7 +225,6 @@ footer > a:first-of-type {
 }
 
 #closemodal {
-	height: 36px !important;
 	width: 90px !important;
 	background-color: rgb(189, 45, 43);
 	border: 1px solid rgb(128, 29, 27) !important;
