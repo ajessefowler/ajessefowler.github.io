@@ -286,12 +286,14 @@ footer > a:first-of-type {
 	border-bottom: 1px solid rgb(23, 48, 42);
 }
 
-#menu > a > p {
+#menu > a > h3 {
 	color: #eeeeee;
 	font-size: 12pt;
 	letter-spacing: 1px;
 	opacity: 0;
 	padding: 8px;
+	margin: 0;
+	text-transform: none;
 }
 
 #homephoto {
@@ -399,6 +401,10 @@ footer > a:first-of-type {
 	margin-top: 40px;
 }
 
+#education > h3, #education > p {
+	text-align: center;
+}
+
 #contact {
 	padding-bottom: 25px;
 	padding-top: 32px;
@@ -490,7 +496,7 @@ footer > a:first-of-type {
 		font-size: 22pt;
 	}
 
-	nav > a > h2, #menu > a > p {
+	nav > a > h2, #menu > a > h3 {
 		transition: color .1s ease;
 	}
 
@@ -567,12 +573,12 @@ footer > a:first-of-type {
 		border-bottom: none;
 	}
 
-	#menu > a > p {
+	#menu > a > h3 {
 		opacity: 1;
 		padding: 8px;
 	}
 
-	#menu > a > p:hover, nav > a > h2:hover {
+	#menu > a > h3:hover, nav > a > h2:hover {
 		cursor: pointer;
 		color: #4fa794;
 	}

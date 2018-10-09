@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
 	function fadeInMenuItems() {
 		let j;
 		let delay = 80;
-		const nodes = document.querySelectorAll('#menu > a > p');
+		const nodes = document.querySelectorAll('#menu > a > h3');
 
 		// Fade in each menu link, adding a delay to the next link
 		for (j = 0; j < nodes.length; j++) {
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
 	// Fade out menu links
 	function fadeOutMenuItems() {
 		let k;
-		const nodes = document.getElementById('menu').getElementsByTagName('p');
+		const nodes = document.getElementById('menu').getElementsByTagName('h3');
 
 		for (k = 0; k < nodes.length; k++) {
 			nodes[k].style.animation = 'fadeOut .1s ease forwards';
