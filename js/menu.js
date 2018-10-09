@@ -73,6 +73,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
 	}
 });
 
+// Create smooth scrolling when clicking menu links
 function initScrolling() {
 	const mainScroller = zenscroll.createScroller(document.getElementById('maincontainer'));
 	const contentScroller = zenscroll.createScroller(document.getElementById('contentcontainer'));
@@ -89,6 +90,7 @@ function initScrolling() {
 	document.getElementById('aboutlink').addEventListener('click', scrollToAbout);
 }
 
+// Displays larger version image in modal when image is clicked
 function initModal() {
 	let i;
 	let viewHeight = window.innerHeight - 58;

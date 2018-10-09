@@ -214,7 +214,7 @@ footer > a:first-of-type {
 	height: 36px !important;
 	width: 90px !important;
 	background-color: rgb(189, 45, 43);
-	border: none !important;
+	border: 1px solid rgb(128, 29, 27) !important;
 	position: relative;
 	bottom: 18px;
 	display: flex;
@@ -342,10 +342,21 @@ footer > a:first-of-type {
 }
 
 .projectimages > img {
-	width: 50%;
-	margin: 13px 5px 10px;
+	width: calc(50% - 15px);
 	border-radius: 5px;
 	box-shadow: 0 1px 6px rgb(80, 80, 80);
+}
+
+.projectimages > img:first-of-type {
+	margin: 13px 5px 10px 0;
+}
+
+.projectimages > img:last-of-type {
+	margin: 13px 0 10px 5px;
+}
+
+#projects > img {
+	width: 100%;
 }
 
 #projects > p {
@@ -484,7 +495,15 @@ footer > a:first-of-type {
 	}
 
 	.projectimages > img {
-		margin: 20px 15px 10px;
+		width: calc(50% - 25px);
+	}
+
+	.projectimages > img:first-of-type {
+		margin: 20px 15px 10px 0;
+	}
+
+	.projectimages > img:last-of-type {
+		margin: 20px 0 10px 15px;
 	}
 
 	#contentcontainer {
