@@ -317,7 +317,7 @@ footer > a:first-of-type {
 #homephoto > h2 {
 	position: absolute;
 	top: 122px;
-	left: 20px;
+	left: 25px;
 	color: #eeeeee;
 	font-size: 18pt;
 }
@@ -325,8 +325,8 @@ footer > a:first-of-type {
 #homephoto > p {
 	position: relative;
 	top: 150px;
-	left: 20px;
-	width: 190px;
+	left: 25px;
+	width: 170px;
 	font-size: 11pt;
 	color: #eeeeee;
 }
@@ -344,7 +344,7 @@ footer > a:first-of-type {
 	margin-bottom: 18px;
 }
 
-#about > h3, #projects > h3, #skills > h3, #education > h3 {
+#about > h3, #projects > h3, #skills > h3 {
 	padding: 0 9px;
 	color: rgb(51, 104, 92);
 }
@@ -357,7 +357,7 @@ footer > a:first-of-type {
 	padding-top: 17px;
 }
 
-#skills > p, #projects > p, #education > p {
+#skills > p, #projects > p {
 	padding: 5px 9px 12px;
 }
 
@@ -401,10 +401,6 @@ footer > a:first-of-type {
 
 #projects > h3:not(:first-of-type) {
 	margin-top: 40px;
-}
-
-#education > h3, #education > p {
-	text-align: center;
 }
 
 #contact {
