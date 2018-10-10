@@ -316,18 +316,18 @@ footer > a:first-of-type {
 
 #homephoto > h2 {
 	position: absolute;
-	top: 122px;
+	top: 121px;
 	left: 25px;
 	color: #eeeeee;
-	font-size: 18pt;
+	font-size: 20pt;
 }
 
 #homephoto > p {
 	position: relative;
 	top: 150px;
 	left: 25px;
-	width: 170px;
-	font-size: 11pt;
+	width: 180px;
+	font-size: 16px;
 	color: #eeeeee;
 }
 
@@ -361,6 +361,10 @@ footer > a:first-of-type {
 	padding: 5px 9px 12px;
 }
 
+#projects {
+	padding-bottom: 16px;
+}
+
 .projectimages {
 	display: flex;
 	justify-content: center;
@@ -374,21 +378,22 @@ footer > a:first-of-type {
 }
 
 .projectimages > img:first-of-type {
-	margin: 13px 5px 10px 0;
+	margin: 11px 5px 10px 0;
 }
 
 .projectimages > img:last-of-type {
-	margin: 13px 0 10px 5px;
+	margin: 11px 0 10px 5px;
 }
 
 #projects > img {
 	width: calc(100% - 20px);
 	position: relative;
 	left: 10px;
+	margin-bottom: 10px;
 }
 
 #projects > p {
-	padding-bottom: 10px;
+	padding-bottom: 12px;
 }
 
 #projects > h2 {
@@ -405,7 +410,6 @@ footer > a:first-of-type {
 
 #contact {
 	padding-bottom: 25px;
-	padding-top: 32px;
 }
 
 #contact > p {
@@ -551,7 +555,7 @@ footer > a:first-of-type {
 	#menu {
 		height: 55px;
 		background-color: rgba(60, 60, 60, 0);
-		width: 500px;
+		width: 370px;
 		top: 0;
 		right: 15px;
 		flex-direction: row;

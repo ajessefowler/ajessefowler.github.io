@@ -107,15 +107,16 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
 // Create smooth scrolling when clicking menu links
 function initScrolling() {
-	const mainScroller = zenscroll.createScroller(document.getElementById('maincontainer'));
+	const contentTop = document.getElementById('contentcontainer').offsetTop;
+	const mainScroller = zenscroll.createScroller(document.getElementById('maincontainer'), 500, 0);
 
 	function scrollToTop() {
 		mainScroller.to(document.getElementById('homephoto'));
 	}
 
 	function scrollToElement(element) {
-		let top = document.getElementById(element).offsetTop - 55;
-		mainScroller.toY(top);
+		const elementTop = contentTop + document.getElementById(element).offsetTop - 55;
+		mainScroller.toY(elementTop);
 	}
 
 	document.getElementById('headerlink').addEventListener('click', scrollToTop);
@@ -131,10 +132,6 @@ function initScrolling() {
 	document.getElementById('contactlink').addEventListener('click', function() {
 		scrollToElement('contact');
 	});
-}
-
-function initMainScrolling() {
-	
 }
 
 // Displays larger version image in modal when image is clicked
