@@ -15,7 +15,7 @@ nav {
 	position: fixed;
 	top: 0;
 	z-index: 5;
-	transition: background-color .3s ease;
+	transition: background-color .4s ease;
 }
 
 nav > a {
@@ -26,7 +26,7 @@ nav > a > h2 {
 	color: #eeeeee;
 	font-size: 20pt;
 	opacity: 0;
-	transition: opacity .3s ease;
+	transition: opacity .4s ease;
 }
 
 a {
@@ -496,7 +496,7 @@ footer > a:first-of-type {
 
 	nav > a > h2 {
 		font-size: 22pt;
-		transition: opacity .3s ease, color .1s ease;
+		transition: opacity .4s ease, color .1s ease;
 	}
 
 	textarea:hover, input:hover {

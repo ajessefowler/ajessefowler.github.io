@@ -2,6 +2,7 @@
 document.addEventListener('DOMContentLoaded', function(event) {	
 	let i;
 	let menuOpen = false;
+	let navOpen = false;
 	let screenWidth = window.screen.availWidth;
 	const menu = document.getElementById('menu');
 	const menuLinks = menu.getElementsByTagName('a');
@@ -20,6 +21,17 @@ document.addEventListener('DOMContentLoaded', function(event) {
 		}
 	});
 
+	// Scroll animations
+	document.getElementById('maincontainer').addEventListener('scroll', function() {
+		if (document.getElementById('contentcontainer').getBoundingClientRect().top < 55) {
+			navOpen = true;
+			displayNav();
+		} else {
+			navOpen = false;
+			hideNav();
+		}
+	});
+
 	// Close menu when any menu link is clicked
 	if (window.screen.availWidth < 768) {
 		for (i = 0; i < menuLinks.length; i++) {
@@ -28,9 +40,24 @@ document.addEventListener('DOMContentLoaded', function(event) {
 		}
 	}
 
+	function displayNav() {
+		document.querySelector('nav').style.backgroundColor = 'rgba(20, 20, 20, 0.9)';
+		document.querySelector('nav > a > h2').style.opacity = '1.0';
+	}
+
+	function hideNav() {
+		document.querySelector('nav').style.backgroundColor = 'transparent';
+		document.querySelector('nav > a > h2').style.opacity = '0.0';
+	}
+
 	function openMenu() {
 		menuOpen = true;
 		fadeInMenuItems();
+
+		if (!navOpen) {
+			displayNav();
+		}
+
 		document.getElementById('menu').style.animation = 'menuIn .3s ease forwards';
 		document.getElementById('menumiddle').style.animation = 'fadeOut .2s ease forwards';
 		document.getElementById('menutop').style.animation = 'menuTopOpen .3s ease forwards';
@@ -40,6 +67,11 @@ document.addEventListener('DOMContentLoaded', function(event) {
 	function closeMenu() {
 		menuOpen = false;
 		fadeOutMenuItems();
+
+		if (!navOpen) {
+			hideNav();
+		}
+
 		document.getElementById('menu').style.animation = 'menuOut .3s ease forwards';
 		document.getElementById('menumiddle').style.animation = 'fadeIn .4s ease forwards';
 		document.getElementById('menutop').style.animation = 'menuTopClose .3s ease forwards';
@@ -49,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
 	// Fade in menu links from left to right
 	function fadeInMenuItems() {
 		let j;
-		let delay = 80;
+		let delay = 140;
 		const nodes = document.querySelectorAll('#menu > a > h3');
 
 		// Fade in each menu link, adding a delay to the next link
@@ -99,19 +131,6 @@ function initScrolling() {
 	document.getElementById('contactlink').addEventListener('click', function() {
 		scrollToElement('contact');
 	});
-
-	// Scroll animations
-	document.getElementById('maincontainer').addEventListener('scroll', function() {
-		console.log(document.getElementById('contentcontainer').getBoundingClientRect().top);
-
-		if (document.getElementById('contentcontainer').getBoundingClientRect().top < 55) {
-			document.querySelector('nav').style.backgroundColor = 'rgba(20, 20, 20, 0.9)';
-			document.querySelector('nav > a > h2').style.opacity = '1.0';
-		} else {
-			document.querySelector('nav').style.backgroundColor = 'transparent';
-			document.querySelector('nav > a > h2').style.opacity = '0.0';
-		}
-	})
 }
 
 function initMainScrolling() {
