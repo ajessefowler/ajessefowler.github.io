@@ -9,45 +9,40 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
 	initScrolling();
 
+	document.getElementById('menubutton').addEventListener('click', toggleMenu);
+	document.getElementById('maincontainer').addEventListener('scroll', toggleMenuVisibility);
+
 	if (screenWidth < 768) {
 		initModal();
-	}
 
-	document.getElementById('menubutton').addEventListener('click', function() {
-		if (!menuOpen) {
-			openMenu();
-		} else {
-			closeMenu();
-		}
-	});
-
-	// Scroll animations
-	document.getElementById('maincontainer').addEventListener('scroll', function() {
-		if (document.getElementById('contentcontainer').getBoundingClientRect().top < 55) {
-			navOpen = true;
-			displayNav();
-		} else {
-			navOpen = false;
-			hideNav();
-		}
-	});
-
-	// Close menu when any menu link is clicked
-	if (window.screen.availWidth < 768) {
 		for (i = 0; i < menuLinks.length; i++) {
 			const element = menuLinks[i];
 			element.addEventListener('click', closeMenu);
 		}
 	}
 
-	function displayNav() {
-		document.querySelector('nav').style.backgroundColor = 'rgba(20, 20, 20, 0.9)';
-		document.querySelector('nav > a > h2').style.opacity = '1.0';
+	function toggleMenu() {
+		if (!menuOpen) {
+			openMenu();
+		} else {
+			closeMenu();
+		}
 	}
 
-	function hideNav() {
-		document.querySelector('nav').style.backgroundColor = 'transparent';
-		document.querySelector('nav > a > h2').style.opacity = '0.0';
+	function toggleMenuVisibility() {
+		if (document.getElementById('contentcontainer').getBoundingClientRect().top < 55) {
+			navOpen = true;
+
+			if (!menuOpen) {
+				displayNav();
+			}
+		} else {
+			navOpen = false;
+			
+			if (!menuOpen) {
+				hideNav();
+			}
+		}
 	}
 
 	function openMenu() {
@@ -77,33 +72,43 @@ document.addEventListener('DOMContentLoaded', function(event) {
 		document.getElementById('menutop').style.animation = 'menuTopClose .3s ease forwards';
 		document.getElementById('menubottom').style.animation = 'menuBottomClose .3s ease forwards';
 	}
-
-	// Fade in menu links from left to right
-	function fadeInMenuItems() {
-		let j;
-		let delay = 140;
-		const nodes = document.querySelectorAll('#menu > a > h3');
-
-		// Fade in each menu link, adding a delay to the next link
-		for (j = 0; j < nodes.length; j++) {
-			const element = nodes[j];
-			setTimeout(function() {
-				element.style.animation = 'fadeIn .3s ease forwards';
-			}, delay)
-			delay += 50;
-		}
-	}
-
-	// Fade out menu links
-	function fadeOutMenuItems() {
-		let k;
-		const nodes = document.getElementById('menu').getElementsByTagName('h3');
-
-		for (k = 0; k < nodes.length; k++) {
-			nodes[k].style.animation = 'fadeOut .1s ease forwards';
-		}
-	}
 });
+
+// Fade in menu links from left to right
+function fadeInMenuItems() {
+	let i;
+	let delay = 140;
+	const nodes = document.querySelectorAll('#menu > a > h3');
+
+	// Fade in each menu link, adding a delay to the next link
+	for (i = 0; i < nodes.length; i++) {
+		const element = nodes[i];
+		setTimeout(function() {
+			element.style.animation = 'fadeIn .3s ease forwards';
+		}, delay)
+		delay += 50;
+	}
+}
+
+// Fade out menu links
+function fadeOutMenuItems() {
+	let i;
+	const nodes = document.getElementById('menu').getElementsByTagName('h3');
+
+	for (i = 0; i < nodes.length; i++) {
+		nodes[i].style.animation = 'fadeOut .1s ease forwards';
+	}
+}
+
+function displayNav() {
+	document.querySelector('nav').style.backgroundColor = 'rgba(20, 20, 20, 0.9)';
+	document.querySelector('nav > a > h2').style.opacity = '1.0';
+}
+
+function hideNav() {
+	document.querySelector('nav').style.backgroundColor = 'transparent';
+	document.querySelector('nav > a > h2').style.opacity = '0.0';
+}
 
 // Create smooth scrolling when clicking menu links
 function initScrolling() {
