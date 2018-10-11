@@ -70,17 +70,15 @@ textarea, input[type="text"], input[type="submit"], input[type="email"], button 
 }
 
 textarea, input {
-	border: 1px solid transparent !important;
-	border-bottom: 1px solid #ccc !important;
+	border: 1px solid #ccc !important;
+	border-radius: 5px !important;
 	font-size: 16px;
 	color: #444;
 }
 
 textarea:focus, input:focus {
 	outline: none;
-	border: 1px solid #ccc !important;
-	border-radius: 5px !important;
-	background-color: #fff !important;
+	border: 1px solid #01579b !important;
 }
 
 input[type="submit"], button {
@@ -427,9 +425,8 @@ footer > a:first-of-type {
 	height: 20px;
 	padding: 6px 9px 3px;
 	margin: 0;
-	background-color: #eee;
+	background-color: #fff;
 	border: none;
-	border-bottom: 1px solid #ccc;
 	font-size: 12pt;
 	font-family: 'Nanum Gothic Coding', sans-serif;
 	resize: none;
@@ -442,16 +439,15 @@ footer > a:first-of-type {
 	height: 150px;
 	padding: 8px 9px;
 	margin: 0 0 24px;
-	background-color: #eee;
+	background-color: #fff;
 	border: none;
-	border-bottom: 1px solid #ccc;
 	font-size: 12pt;
 	font-family: 'Nanum Gothic Coding', sans-serif;
 }
 
 #contactform > p {
 	font-size: 18px;
-	padding: 18px 0 6px;
+	padding: 18px 0 10px;
 	color: #444;
 	font-weight: 700;
 }
@@ -491,11 +487,6 @@ footer > a:first-of-type {
 	nav > a > h2 {
 		font-size: 22pt;
 		transition: opacity .4s ease, color .1s ease;
-	}
-
-	textarea:hover, input:hover {
-		border: 1px solid #ccc !important;
-		border-radius: 5px !important;
 	}
 
 	button, input[type="submit"] {
