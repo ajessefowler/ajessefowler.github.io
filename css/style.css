@@ -15,7 +15,7 @@ nav {
 	position: fixed;
 	top: 0;
 	z-index: 5;
-	transition: background-color .4s ease;
+	transition: background-color .3s ease;
 }
 
 nav > a {
@@ -37,14 +37,14 @@ p {
 	cursor: default;
 	font-family: 'Nanum Gothic Coding', sans-serif;
 	margin: 0;
-	color: #222;
+	color: #111;
 	line-height: 16px;
 	letter-spacing: 0.3px;
 }
 
 h2 {
 	cursor: default;
-	color: #111111;
+	color: #111;
 	font-family: 'Nanum Gothic Coding', sans-serif;
 	font-weight: 700;
 	font-size: 18pt;
@@ -53,7 +53,7 @@ h2 {
 
 h3 {
 	cursor: default;
-	color: #222;
+	color: #111;
 	font-family: 'Nanum Gothic Coding', sans-serif;
 	font-size: 22px;
 	margin: 13px 0 0;
@@ -340,7 +340,7 @@ footer > a:first-of-type {
 
 #about > h3, #projects > h3, #skills > h3 {
 	padding: 0 9px;
-	color: rgb(51, 104, 92);
+	color: #01579b;
 }
 
 #about > h2:first-of-type {
@@ -541,6 +541,10 @@ footer > a:first-of-type {
 	.projectbutton > p:hover {
 		cursor: pointer;
 	}
+	
+	.modalimage:hover {
+		cursor: pointer;
+	}
 
 	#contentcontainer {
 		top: 600px;
@@ -575,7 +579,7 @@ footer > a:first-of-type {
 
 	#menu > a > h3:hover, nav > a > h2:hover {
 		cursor: pointer;
-		color: #4fa794;
+		color: #0475cc;
 	}
 
 	#menubutton {
@@ -595,7 +599,7 @@ footer > a:first-of-type {
 	#homephoto > p {
 		top: 308px;
 		left: 180px;
-		width: 400px;
+		width: 350px;
 		font-size: 18pt;
 	}
 

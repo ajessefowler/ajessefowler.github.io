@@ -5,18 +5,17 @@ function initEventListeners() {
 	let i;
 	let menuOpen = false;
 	let navOpen = false;
-	let screenWidth = window.screen.availWidth;
+	const screenWidth = window.screen.availWidth;
 	const menu = document.getElementById('menu');
 	const menuLinks = menu.getElementsByTagName('a');
 
 	initScrolling();
+	initModal();
 
 	document.getElementById('menubutton').addEventListener('click', toggleMenu);
 	document.getElementById('maincontainer').addEventListener('scroll', toggleMenuVisibility);
 
 	if (screenWidth < 768) {
-		initModal();
-
 		for (i = 0; i < menuLinks.length; i++) {
 			const element = menuLinks[i];
 			element.addEventListener('click', closeMenu);
@@ -82,7 +81,7 @@ function fadeInMenuItems() {
 	let delay = 140;
 	const nodes = document.querySelectorAll('#menu > a > h3');
 
-	// Fade in each menu link, adding a delay to the next link
+	// Fade in each menu link, adding an additional delay to the next link
 	for (i = 0; i < nodes.length; i++) {
 		const element = nodes[i];
 		setTimeout(function() {
@@ -127,15 +126,19 @@ function initScrolling() {
 	}
 
 	document.getElementById('headerlink').addEventListener('click', scrollToTop);
+
 	document.getElementById('aboutlink').addEventListener('click', function() {
 		scrollToElement('about');
 	});
+
 	document.getElementById('skillslink').addEventListener('click', function() {
 		scrollToElement('skills');
 	});
+
 	document.getElementById('projectslink').addEventListener('click', function() {
 		scrollToElement('projects');
 	});
+
 	document.getElementById('contactlink').addEventListener('click', function() {
 		scrollToElement('contact');
 	});
@@ -144,7 +147,7 @@ function initScrolling() {
 // Displays larger version image in modal when image is clicked
 function initModal() {
 	let i;
-	let viewHeight = window.innerHeight - 70;
+	const viewHeight = window.innerHeight - 70;
 	const image = document.getElementById('modalimage');
 	const elements = document.querySelectorAll('.modalimage');
 	const modal = document.getElementById('modal');
