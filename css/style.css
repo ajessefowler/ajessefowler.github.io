@@ -126,12 +126,6 @@ footer > a:first-of-type {
 	margin: 2px 0;
 }
 
-.photo {
-	height: 200px;
-	width: 100%;
-	background-color: #555555;
-}
-
 .info {
 	position: relative;
 	padding: 20px 14px 4px;
@@ -188,7 +182,7 @@ footer > a:first-of-type {
 }
 
 .modalimage {
-	border-radius: 5px;
+	border-radius: 3px;
 	box-shadow: 0 1px 6px rgb(80, 80, 80);
 }
 
@@ -240,7 +234,7 @@ footer > a:first-of-type {
 }
 
 #modal > img {
-	border-radius: 7px;
+	border-radius: 4px;
 	box-shadow: 0 1px 10px rgb(5, 5, 5);
 	margin-top: 20px;
 	z-index: 16;
