@@ -1,5 +1,7 @@
 // Initialize event listeners for menu button and menu links
-document.addEventListener('DOMContentLoaded', function(event) {	
+document.addEventListener('DOMContentLoaded', initEventListeners);
+
+function initEventListeners() {
 	let i;
 	let menuOpen = false;
 	let navOpen = false;
@@ -72,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
 		document.getElementById('menutop').style.animation = 'menuTopClose .3s ease forwards';
 		document.getElementById('menubottom').style.animation = 'menuBottomClose .3s ease forwards';
 	}
-});
+}
 
 // Fade in menu links from left to right
 function fadeInMenuItems() {
@@ -143,6 +145,7 @@ function initScrolling() {
 function initModal() {
 	let i;
 	let viewHeight = window.innerHeight - 70;
+	const image = document.getElementById('modalimage');
 	const elements = document.querySelectorAll('.modalimage');
 	const modal = document.getElementById('modal');
 
@@ -153,16 +156,17 @@ function initModal() {
 	}
 
 	function openModal() {
-		document.getElementById('modalimage').src = this.src;
-		document.getElementById('modalimage').style.height = viewHeight + 'px';
+		image.src = this.src;
+		image.style.height = viewHeight + 'px';
+		image.style.width = 'auto';
 		modal.style.display = 'flex';
 
-		if (document.getElementById('modalimage').offsetWidth < window.innerWidth) {
-			document.getElementById('modalimage').style.width = 'auto';
-			document.getElementById('modalimage').style.height = viewHeight + 'px';
+		if (image.offsetWidth < window.innerWidth) {
+			image.style.width = 'auto';
+			image.style.height = viewHeight + 'px';
 		} else {
-			document.getElementById('modalimage').style.height = 'auto';
-			document.getElementById('modalimage').style.width = (window.innerWidth - 20) + 'px';
+			image.style.height = 'auto';
+			image.style.width = (window.innerWidth - 20) + 'px';
 		}
 
 		modal.style.animation = 'fadeIn .3s ease forwards';
