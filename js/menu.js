@@ -11,6 +11,7 @@ function initEventListeners() {
 
 	initScrolling();
 	initModal();
+	initForm();
 
 	document.getElementById('menubutton').addEventListener('click', toggleMenu);
 	document.getElementById('maincontainer').addEventListener('scroll', toggleMenuVisibility);
@@ -180,5 +181,20 @@ function initModal() {
 		setTimeout(function() {
 			modal.style.display = 'none';
 		}, 300);
+	}
+}
+
+function initForm() {
+	let i;
+	const elements = document.querySelectorAll('textarea');
+
+	for (i = 0; i < elements.length - 1; i++) {
+		element = elements[i];
+
+		element.addEventListener('keypress', (event) => {
+			if (event.key === 'Enter') {
+				event.preventDefault();
+			}
+		});
 	}
 }

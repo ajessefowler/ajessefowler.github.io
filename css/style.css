@@ -422,8 +422,8 @@ footer > a:first-of-type {
 
 #contactform > textarea:not(:last-of-type) {
 	width: calc(100% - 18px);
-	height: 20px;
-	padding: 6px 9px 3px;
+	height: 23px;
+	padding: 9px 9px 3px;
 	margin: 0;
 	background-color: #fff;
 	border: none;
