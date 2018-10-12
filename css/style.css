@@ -198,6 +198,10 @@ footer > a:first-of-type {
 	transform-style: preserve-3d;
 	overflow-x: hidden;
 	overflow-y: scroll;
+	margin-left: calc(100% - 100vw);
+    margin-right: calc(100% - 100vw);
+    padding-left: calc(100vw - 100%);
+    padding-right: calc(100vw - 100%);
 }
 
 #contentcontainer {
