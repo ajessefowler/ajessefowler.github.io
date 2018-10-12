@@ -609,4 +609,8 @@ footer > a:first-of-type {
 	#contactform {
 		padding: 0 15%;
 	}
+
+	#modal > img {
+		margin-top: 35px;
+	}
 }

@@ -32,7 +32,7 @@ function initEventListeners() {
 	}
 
 	function toggleMenuVisibility() {
-		if (document.getElementById('contentcontainer').getBoundingClientRect().top < 55) {
+		if (document.getElementById('contentcontainer').getBoundingClientRect().top < 56) {
 			navOpen = true;
 
 			if (!menuOpen) {
