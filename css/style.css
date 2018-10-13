@@ -336,6 +336,18 @@ footer > a:first-of-type {
 	padding-bottom: 22px;
 }
 
+#about > button {
+	width: 135px; 
+	display: flex; 
+	justify-content: space-between;
+	margin-left: auto;
+	margin-right: 9px;
+}
+
+#about > button > i, #about > button > p {
+	color: #444;
+}
+
 #about > h2, #skills > h2 {
 	margin-bottom: 18px;
 }

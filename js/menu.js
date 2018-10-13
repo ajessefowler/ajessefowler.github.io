@@ -143,6 +143,10 @@ function initScrolling() {
 	document.getElementById('contactlink').addEventListener('click', function() {
 		scrollToElement('contact');
 	});
+
+	document.getElementById('ctabutton').addEventListener('click', function() {
+		scrollToElement('contact');
+	});
 }
 
 // Displays larger version image in modal when image is clicked
