@@ -181,7 +181,7 @@ footer > a:first-of-type {
 
 .modalimage {
 	border-radius: 3px;
-	box-shadow: 0 1px 6px rgb(80, 80, 80);
+	box-shadow: 0 1px 4px rgb(80, 80, 80);
 }
 
 #send > i {
@@ -366,7 +366,7 @@ footer > a:first-of-type {
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 }
 
 .projectimages > img {
