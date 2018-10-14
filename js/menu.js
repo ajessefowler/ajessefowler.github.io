@@ -87,7 +87,7 @@ function fadeInMenuItems() {
 		const element = nodes[i];
 		setTimeout(function() {
 			element.style.animation = 'fadeIn .3s ease forwards';
-		}, delay)
+		}, delay);
 		delay += 50;
 	}
 }
@@ -121,36 +121,30 @@ function initScrolling() {
 		scroller.to(document.getElementById('homephoto'));
 	}
 
-	function scrollToElement(element) {
-		const elementTop = contentTop + document.getElementById(element).offsetTop - 55;
-		scroller.toY(elementTop);
+	// Add tiny delay to event listeners to prevent inaccurate scroll targets
+	function addDelayedListener(link, element) {
+		setTimeout(addListener, 50);
+
+		function addListener() {
+			document.getElementById(link).addEventListener('click', function() {
+				scrollToElement(element);
+			});
+		}
+
+		function scrollToElement() {
+			const elementTop = contentTop + document.getElementById(element).offsetTop - 55;
+			scroller.toY(elementTop);
+		}
 	}
 
 	document.getElementById('headerlink').addEventListener('click', scrollToTop);
 
-	document.getElementById('aboutlink').addEventListener('click', function() {
-		scrollToElement('about');
-	});
-
-	document.getElementById('skillslink').addEventListener('click', function() {
-		scrollToElement('skills');
-	});
-
-	document.getElementById('projectslink').addEventListener('click', function() {
-		scrollToElement('projects');
-	});
-
-	document.getElementById('contactlink').addEventListener('click', function() {
-		scrollToElement('contact');
-	});
-
-	document.getElementById('ctabutton').addEventListener('click', function() {
-		scrollToElement('contact');
-	});
-
-	document.getElementById('explorebutton').addEventListener('click', function() {
-		scrollToElement('projects');
-	});
+	addDelayedListener('aboutlink', 'about');
+	addDelayedListener('skillslink', 'skills');
+	addDelayedListener('projectslink', 'projects');
+	addDelayedListener('contactlink', 'contact');
+	addDelayedListener('ctabutton', 'contact');
+	addDelayedListener('explorebutton', 'projects');
 }
 
 // Displays larger version image in modal when image is clicked
