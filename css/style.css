@@ -210,6 +210,30 @@ footer > a:first-of-type {
 	z-index: 1;
 	background-color: #eee;
 	top: 270px;
+	border-radius: 14px 14px 0 0;
+}
+
+#aboutbuttons {
+	display: flex;
+	justify-content: space-between;
+	width: calc(100% - 22px);
+	margin: 0 9px 21px;
+}
+
+#ctabutton {
+	display: flex;
+	justify-content: space-between;
+	width: 132px;
+}
+
+#explorebutton {
+	display: flex;
+	justify-content: space-between;
+	width: 184px;
+}
+
+#ctabutton > p, #ctabutton > i, #explorebutton > p, #explorebutton > i {
+	color: #444;
 }
 
 #modal {
@@ -333,15 +357,14 @@ footer > a:first-of-type {
 }
 
 #about > p:first-of-type {
-	padding-bottom: 22px;
+	padding-bottom: 14px;
 }
 
 #about > button {
 	width: 135px; 
 	display: flex; 
 	justify-content: space-between;
-	margin-left: auto;
-	margin-right: 9px;
+	margin: 0 9px 12px auto;
 }
 
 #about > button > i, #about > button > p {
@@ -475,6 +498,8 @@ footer > a:first-of-type {
 #send {
 	margin-left: auto !important;
 	margin-bottom: 25px !important;
+	position: relative;
+	left: 2px;
 }
 
 #send:active {
@@ -554,6 +579,21 @@ footer > a:first-of-type {
 
 	#contentcontainer {
 		top: 600px;
+		border-radius: 0;
+	}
+
+	#aboutbuttons {
+		justify-content: flex-end;
+		margin: 21px 9px;
+	}
+
+	#ctabutton {
+		margin-left: 12px;
+		width: 138px;
+	}
+
+	#explorebutton {
+		width: 192px;
 	}
 
 	#menu {
@@ -628,5 +668,23 @@ footer > a:first-of-type {
 
 	#modal > img {
 		margin-top: 35px;
+	}
+}
+
+@media only screen and (max-width: 365px) {
+	#ctabutton {
+		align-items: center;
+		width: 123px;
+		height: 48px;
+	}
+
+	#explorebutton {
+		align-items: center;
+		width: 136px;
+		height: 48px;
+	}
+
+	#ctabutton > i, #explorebutton > i {
+		margin: 0 10px 0 4px;
 	}
 }

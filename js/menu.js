@@ -115,15 +115,15 @@ function hideNav() {
 // Create smooth scrolling when clicking menu links
 function initScrolling() {
 	const contentTop = document.getElementById('contentcontainer').offsetTop;
-	const mainScroller = zenscroll.createScroller(document.getElementById('maincontainer'), 500, 0);
+	const scroller = zenscroll.createScroller(document.getElementById('maincontainer'), 500, 0);
 
 	function scrollToTop() {
-		mainScroller.to(document.getElementById('homephoto'));
+		scroller.to(document.getElementById('homephoto'));
 	}
 
 	function scrollToElement(element) {
 		const elementTop = contentTop + document.getElementById(element).offsetTop - 55;
-		mainScroller.toY(elementTop);
+		scroller.toY(elementTop);
 	}
 
 	document.getElementById('headerlink').addEventListener('click', scrollToTop);
@@ -146,6 +146,10 @@ function initScrolling() {
 
 	document.getElementById('ctabutton').addEventListener('click', function() {
 		scrollToElement('contact');
+	});
+
+	document.getElementById('explorebutton').addEventListener('click', function() {
+		scrollToElement('projects');
 	});
 }
 
