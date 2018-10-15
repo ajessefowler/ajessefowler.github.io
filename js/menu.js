@@ -103,12 +103,12 @@ function fadeOutMenuItems() {
 }
 
 function displayNav() {
-	document.querySelector('nav').style.backgroundColor = 'rgba(20, 20, 20, 0.9)';
+	document.querySelector('#navbg').style.opacity = '1.0';
 	document.querySelector('nav > a > h2').style.opacity = '1.0';
 }
 
 function hideNav() {
-	document.querySelector('nav').style.backgroundColor = 'transparent';
+	document.querySelector('#navbg').style.opacity = '0.0';
 	document.querySelector('nav > a > h2').style.opacity = '0.0';
 }
 
@@ -123,7 +123,7 @@ function initScrolling() {
 
 	// Add tiny delay to event listeners to prevent inaccurate scroll targets
 	function addDelayedListener(link, element) {
-		setTimeout(addListener, 50);
+		setTimeout(addListener, 100);
 
 		function addListener() {
 			document.getElementById(link).addEventListener('click', function() {
