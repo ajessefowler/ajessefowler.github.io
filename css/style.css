@@ -172,7 +172,7 @@ footer > a:first-of-type {
 }
 
 .projectbuttons > button:first-of-type {
-	margin-right: 16px;
+	margin-right: 12px;
 }
 
 .projectbutton {
@@ -182,7 +182,8 @@ footer > a:first-of-type {
 }
 
 .projectbutton > p {
-	color: #444; 
+	color: #444;
+	font-weight: bold; 
 }
 
 .projectbutton > i {
@@ -226,7 +227,7 @@ footer > a:first-of-type {
 
 #aboutbuttons {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
 	width: calc(100% - 22px);
 	margin: 0 9px 21px;
 }
@@ -235,12 +236,17 @@ footer > a:first-of-type {
 	display: flex;
 	justify-content: space-between;
 	width: 132px;
+	margin-left: 12px;
 }
 
 #explorebutton {
 	display: flex;
 	justify-content: space-between;
 	width: 184px;
+}
+
+#ctabutton > p, #explorebutton > p {
+	font-weight: bold;
 }
 
 #ctabutton > p, #ctabutton > i, #explorebutton > p, #explorebutton > i {
@@ -325,7 +331,7 @@ footer > a:first-of-type {
 	font-size: 12pt;
 	letter-spacing: 1px;
 	opacity: 0;
-	padding: 8px;
+	padding: 8px 14px;
 	margin: 0;
 	text-transform: none;
 }
@@ -595,7 +601,6 @@ footer > a:first-of-type {
 	}
 
 	#aboutbuttons {
-		justify-content: flex-end;
 		margin: 21px 9px;
 	}
 
