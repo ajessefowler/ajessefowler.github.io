@@ -117,6 +117,8 @@ function initScrolling() {
 	const contentTop = document.getElementById('contentcontainer').offsetTop;
 	const scroller = zenscroll.createScroller(document.getElementById('maincontainer'), 500, 0);
 
+	console.log(contentTop);
+
 	function scrollToTop() {
 		scroller.to(document.getElementById('homephoto'));
 	}

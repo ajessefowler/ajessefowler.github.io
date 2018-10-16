@@ -123,9 +123,8 @@ footer > a > i {
 	color: #444;
 }
 
-footer > a:first-of-type {
-	position: relative;
-	right: 15px;
+footer > a:not(:last-of-type) {
+	padding-right: 15px;
 }
 
 .menudiv {
@@ -229,7 +228,7 @@ footer > a:first-of-type {
 	display: flex;
 	justify-content: flex-end;
 	width: calc(100% - 22px);
-	margin: 0 9px 21px;
+	margin: 6px 9px 23px;
 }
 
 #ctabutton {
@@ -376,17 +375,6 @@ footer > a:first-of-type {
 
 #about > p:first-of-type {
 	padding-bottom: 14px;
-}
-
-#about > button {
-	width: 135px; 
-	display: flex; 
-	justify-content: space-between;
-	margin: 0 9px 12px auto;
-}
-
-#about > button > i, #about > button > p {
-	color: #444;
 }
 
 #about > h2, #skills > h2 {
@@ -562,6 +550,14 @@ footer > a:first-of-type {
 		padding: 0 50px;
 	}
 
+	footer > a > i {
+		transition: color .1s ease;
+	}
+
+	footer > a > i:hover {
+		color: #333;
+	}
+
 	.info {
 		padding: 17px 20% 0;
 	}
@@ -605,7 +601,6 @@ footer > a:first-of-type {
 	}
 
 	#ctabutton {
-		margin-left: 12px;
 		width: 138px;
 	}
 
@@ -693,6 +688,10 @@ footer > a:first-of-type {
 }
 
 @media only screen and (max-width: 365px) {
+	footer > p {
+		font-size: 11pt;
+	}
+
 	#ctabutton {
 		align-items: center;
 		width: 123px;
