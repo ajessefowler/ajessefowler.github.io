@@ -38,6 +38,7 @@ nav > a > h2 {
 	font-size: 20pt;
 	opacity: 0;
 	transition: opacity .4s ease;
+	pointer-events: none;
 }
 
 a {
@@ -146,13 +147,13 @@ footer > a:not(:last-of-type) {
 }
 
 .info > h2, #skills > h2 {
-	width: calc(100% - 22px);
+	width: auto;
 	color: #333;
 	padding-bottom: 5px;
 	margin: 0 9px;
 	border-bottom: 1px solid #ccc;
 	text-align: left;
-	font-size: 30px;
+	font-size: 28px;
 }
 
 .anchor {
@@ -394,6 +395,10 @@ footer > a:not(:last-of-type) {
 	padding-top: 17px;
 }
 
+#skills > p {
+	font-weight: bold;
+}
+
 #skills > p, #projects > p {
 	padding: 5px 9px 12px;
 }
@@ -515,7 +520,8 @@ footer > a:not(:last-of-type) {
 @media only screen and (min-width: 768px) {
 
 	p {
-		font-size: 13pt !important;
+		font-size: 14pt !important;
+		line-height: 18px;
 	}
 
 	h3 {
@@ -537,6 +543,7 @@ footer > a:not(:last-of-type) {
 
 	button, input[type="submit"] {
 		transition: background-color .1s ease;
+		width: 109px;
 	}
 
 	button:hover, input[type="submit"]:hover {
@@ -546,8 +553,8 @@ footer > a:not(:last-of-type) {
 
 	footer {
 		justify-content: center;
-		width: calc(100% - 100px);
-		padding: 0 50px;
+		width: calc(100% - 60px);
+		padding: 0 30px;
 	}
 
 	footer > a > i {
@@ -558,6 +565,10 @@ footer > a:not(:last-of-type) {
 		color: #333;
 	}
 
+	.disablehover {
+		cursor: default !important;
+	}
+
 	.info {
 		padding: 17px 20% 0;
 	}
@@ -565,6 +576,7 @@ footer > a:not(:last-of-type) {
 	.info > h2, #skills > h2 {
 		font-size: 28pt;
 		margin-bottom: 16px;
+		width: auto;
 	}
 
 	.photo {
@@ -596,16 +608,20 @@ footer > a:not(:last-of-type) {
 		border-radius: 0;
 	}
 
+	#about > h2 {
+		padding-top: 20px;
+	}
+
 	#aboutbuttons {
 		margin: 21px 9px;
 	}
 
 	#ctabutton {
-		width: 138px;
+		width: 147px;
 	}
 
 	#explorebutton {
-		width: 192px;
+		width: 205px;
 	}
 
 	#ctabutton > p:hover, #explorebutton > p:hover {
@@ -646,6 +662,22 @@ footer > a:not(:last-of-type) {
 
 	#menubutton {
 		display: none;
+	}
+
+	#skills > h3, #skills > p {
+		text-align: center;
+	}
+
+	#skills > h3 {
+		font-size: 20pt;
+	}
+
+	#projects > h3 {
+		font-size: 24pt;
+	}
+
+	.projecttechs {
+		font-size: 15pt !important;
 	}
 
 	#homephoto {

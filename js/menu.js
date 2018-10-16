@@ -105,11 +105,15 @@ function fadeOutMenuItems() {
 function displayNav() {
 	document.querySelector('#navbg').style.opacity = '1.0';
 	document.querySelector('nav > a > h2').style.opacity = '1.0';
+	document.querySelector('nav > a > h2').style.pointerEvents = 'auto';
+	document.querySelector('nav > a > h2').classList.remove('disablehover');
 }
 
 function hideNav() {
 	document.querySelector('#navbg').style.opacity = '0.0';
 	document.querySelector('nav > a > h2').style.opacity = '0.0';
+	document.querySelector('nav > a > h2').style.pointerEvents = 'none';
+	document.querySelector('nav > a > h2').classList.add('disablehover');
 }
 
 // Create smooth scrolling when clicking menu links
