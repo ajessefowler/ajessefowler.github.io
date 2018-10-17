@@ -137,7 +137,7 @@ footer > a:not(:last-of-type) {
 
 .info {
 	position: relative;
-	padding: 20px 14px 4px;
+	padding: 20px 14px 10px;
 }
 
 .info > p {
@@ -169,6 +169,10 @@ footer > a:not(:last-of-type) {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
+}
+
+.projectbuttons:last-of-type {
+	padding: 10px 0 12px;
 }
 
 .projectbuttons > button:first-of-type {
@@ -367,20 +371,12 @@ footer > a:not(:last-of-type) {
 	margin-bottom: 8px;
 }
 
-#skills {
-	padding-top: 17px;
-}
-
 #skills > p {
 	font-weight: bold;
 }
 
 #skills > p, #projects > p {
 	padding: 5px 9px 12px;
-}
-
-#projects {
-	padding-bottom: 16px;
 }
 
 .projectimages {
@@ -424,10 +420,6 @@ footer > a:not(:last-of-type) {
 
 #projects > h3:not(:first-of-type) {
 	margin-top: 40px;
-}
-
-#contact {
-	padding-bottom: 25px;
 }
 
 #contact > p {
@@ -497,7 +489,7 @@ footer > a:not(:last-of-type) {
 
 	p {
 		font-size: 14pt !important;
-		line-height: 18px;
+		line-height: 19px;
 	}
 
 	h3 {
@@ -546,7 +538,7 @@ footer > a:not(:last-of-type) {
 	}
 
 	.info {
-		padding: 17px 20% 0;
+		padding: 17px 20% 20px;
 	}
 
 	.info > h2 {
@@ -620,10 +612,6 @@ footer > a:not(:last-of-type) {
 		display: none;
 	}
 
-	#about {
-		padding-top: 35px;
-	}
-
 	#skills > h3, #skills > p {
 		text-align: center;
 	}
@@ -657,17 +645,12 @@ footer > a:not(:last-of-type) {
 		font-size: 18pt;
 	}
 
-	#about > p {
-		padding-bottom: 18px;
-	}
-
-	#about > p:last-of-type {
-		padding-bottom: 0px;
+	#about {
+		padding-top: 35px;
 	}
 
 	#contact {
 		padding-bottom: 40px;
-		padding-top: 29px;
 	}
 
 	#contactform {
@@ -682,21 +665,5 @@ footer > a:not(:last-of-type) {
 @media only screen and (max-width: 365px) {
 	footer > p {
 		font-size: 11pt;
-	}
-
-	#ctabutton {
-		align-items: center;
-		width: 123px;
-		height: 48px;
-	}
-
-	#explorebutton {
-		align-items: center;
-		width: 136px;
-		height: 48px;
-	}
-
-	#ctabutton > i, #explorebutton > i {
-		margin: 0 10px 0 4px;
 	}
 }
