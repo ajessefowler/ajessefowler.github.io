@@ -164,7 +164,7 @@ footer > a:not(:last-of-type) {
 
 
 .projectbuttons {
-	padding: 10px 0 0;
+	padding: 0;
 	margin-right: 9px;
 	display: flex;
 	justify-content: flex-end;
@@ -172,7 +172,7 @@ footer > a:not(:last-of-type) {
 }
 
 .projectbuttons:last-of-type {
-	padding: 10px 0 12px;
+	padding: 0 0 12px;
 }
 
 .projectbuttons > button:first-of-type {
@@ -193,6 +193,10 @@ footer > a:not(:last-of-type) {
 .projectbutton > i {
 	margin-right: 10px;
 	color: #444;
+}
+
+.projecttechs {
+	padding-bottom: 10px !important;
 }
 
 .modalimage {
@@ -346,16 +350,12 @@ footer > a:not(:last-of-type) {
 }
 
 #about {
-	padding-top: 28px;
+	padding-top: 24px;
 }
 
 #about > p {
 	padding-top: 5px;
-	padding-bottom: 5px;
-}
-
-#about > p:first-of-type {
-	padding-bottom: 14px;
+	padding-bottom: 12px;
 }
 
 #about > h2, #skills > h2 {
@@ -403,11 +403,11 @@ footer > a:not(:last-of-type) {
 	width: calc(100% - 20px);
 	position: relative;
 	left: 10px;
-	margin-bottom: 10px;
+	margin-bottom: 12px;
 }
 
 #projects > p {
-	padding-bottom: 12px;
+	padding-bottom: 8px;
 }
 
 #projects > h2 {
@@ -512,6 +512,7 @@ footer > a:not(:last-of-type) {
 	button, input[type="submit"] {
 		transition: background-color .1s ease;
 		width: 109px;
+		height: 40px;
 	}
 
 	button:hover, input[type="submit"]:hover {
@@ -538,7 +539,7 @@ footer > a:not(:last-of-type) {
 	}
 
 	.info {
-		padding: 17px 20% 20px;
+		padding: 17px 20% 40px;
 	}
 
 	.info > h2 {
@@ -555,12 +556,20 @@ footer > a:not(:last-of-type) {
 		width: calc(50% - 25px);
 	}
 
+	.projectimages > img, #projects > img {
+		transition: transform .2s ease;
+	}
+
+	.projectimages > img:hover, #projects > img:hover {
+		transform: scale(1.003);
+	}
+
 	.projectimages > img:first-of-type {
-		margin: 20px 15px 10px 0;
+		margin: 12px 15px 10px 0;
 	}
 
 	.projectimages > img:last-of-type {
-		margin: 20px 0 10px 15px;
+		margin: 12px 0 10px 15px;
 	}
 
 	.projectbutton > p:hover {
@@ -616,12 +625,16 @@ footer > a:not(:last-of-type) {
 		text-align: center;
 	}
 
-	#skills > h3 {
-		font-size: 20pt;
+	#projects > h3, .projecttechs {
+		text-align: center !important;
 	}
 
-	#projects > h3 {
+	#skills > h3, #projects > h3 {
 		font-size: 24pt;
+	}
+
+	#projects > h3:not(:first-of-type) {
+		margin-top: 50px;
 	}
 
 	.projecttechs, .skills {
@@ -650,7 +663,7 @@ footer > a:not(:last-of-type) {
 	}
 
 	#contact {
-		padding-bottom: 40px;
+		padding-bottom: 60px;
 	}
 
 	#contactform {
