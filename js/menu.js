@@ -149,8 +149,6 @@ function initScrolling() {
 	addDelayedListener('skillslink', 'skills');
 	addDelayedListener('projectslink', 'projects');
 	addDelayedListener('contactlink', 'contact');
-	addDelayedListener('ctabutton', 'contact');
-	addDelayedListener('explorebutton', 'projects');
 }
 
 // Displays larger version image in modal when image is clicked

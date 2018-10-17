@@ -140,13 +140,13 @@ footer > a:not(:last-of-type) {
 	padding: 20px 14px 4px;
 }
 
-.info > p, #skills > p {
+.info > p {
 	text-align: left;
 	padding: 14px 9px 12px;
 	font-size: 16px;
 }
 
-.info > h2, #skills > h2 {
+.info > h2 {
 	width: auto;
 	color: #333;
 	padding-bottom: 5px;
@@ -223,34 +223,6 @@ footer > a:not(:last-of-type) {
 	background-color: #eee;
 	top: 270px;
 	border-radius: 14px 14px 0 0;
-}
-
-#aboutbuttons {
-	display: flex;
-	justify-content: flex-end;
-	width: calc(100% - 22px);
-	margin: 6px 9px 23px;
-}
-
-#ctabutton {
-	display: flex;
-	justify-content: space-between;
-	width: 132px;
-	margin-left: 12px;
-}
-
-#explorebutton {
-	display: flex;
-	justify-content: space-between;
-	width: 184px;
-}
-
-#ctabutton > p, #explorebutton > p {
-	font-weight: bold;
-}
-
-#ctabutton > p, #ctabutton > i, #explorebutton > p, #explorebutton > i {
-	color: #444;
 }
 
 #modal {
@@ -367,6 +339,10 @@ footer > a:not(:last-of-type) {
 	width: 180px;
 	font-size: 16px;
 	color: #eeeeee;
+}
+
+#about {
+	padding-top: 28px;
 }
 
 #about > p {
@@ -573,7 +549,7 @@ footer > a:not(:last-of-type) {
 		padding: 17px 20% 0;
 	}
 
-	.info > h2, #skills > h2 {
+	.info > h2 {
 		font-size: 28pt;
 		margin-bottom: 16px;
 		width: auto;
@@ -606,26 +582,6 @@ footer > a:not(:last-of-type) {
 	#contentcontainer {
 		top: 600px;
 		border-radius: 0;
-	}
-
-	#about > h2 {
-		padding-top: 20px;
-	}
-
-	#aboutbuttons {
-		margin: 21px 9px;
-	}
-
-	#ctabutton {
-		width: 147px;
-	}
-
-	#explorebutton {
-		width: 205px;
-	}
-
-	#ctabutton > p:hover, #explorebutton > p:hover {
-		cursor: pointer;
 	}
 
 	#menu {
@@ -664,6 +620,10 @@ footer > a:not(:last-of-type) {
 		display: none;
 	}
 
+	#about {
+		padding-top: 35px;
+	}
+
 	#skills > h3, #skills > p {
 		text-align: center;
 	}
@@ -676,7 +636,7 @@ footer > a:not(:last-of-type) {
 		font-size: 24pt;
 	}
 
-	.projecttechs {
+	.projecttechs, .skills {
 		font-size: 15pt !important;
 	}
 
