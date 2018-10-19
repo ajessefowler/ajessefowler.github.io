@@ -14,7 +14,6 @@ nav {
 	position: fixed;
 	top: 0;
 	z-index: 6;
-	pointer-events: none;
 }
 
 #navbg {
@@ -27,7 +26,6 @@ nav {
 	top: 0;
 	left: 0;
 	z-index: 5;
-	pointer-events: none;
 }
 
 nav > a {
@@ -316,11 +314,10 @@ footer > a:not(:last-of-type) {
 
 #homephoto {
 	width: 100%;
-	background-image: url(../img/temp.jpg);
+	background-image: url(../img/bg.jpeg);
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: left top;
-	filter: grayscale(100%);
+	background-position: 50% top;
 	display: flex;
 	flex: 1 0 auto;
 	position: relative;
@@ -504,6 +501,14 @@ footer > a:not(:last-of-type) {
 
 	a:hover {
 		cursor: pointer;
+	}
+
+	nav {
+		pointer-events: none;
+	}
+	
+	#navbg {
+		pointer-events: none;
 	}
 
 	nav > a {
