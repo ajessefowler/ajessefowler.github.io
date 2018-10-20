@@ -314,8 +314,8 @@ footer > a:not(:last-of-type) {
 
 #homephoto {
 	width: 100%;
-	background-image: url(../img/bg.jpeg);
-	background-size: cover;
+	background-image: url(../img/bg.PNG);
+	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: 50% top;
 	display: flex;
@@ -657,7 +657,8 @@ footer > a:not(:last-of-type) {
 	}
 
 	#homephoto {
-		background-position: center 35%;
+		background-size: cover;
+		background-position: center top;
 	}
 
 	#homephoto > h2 {
@@ -687,6 +688,24 @@ footer > a:not(:last-of-type) {
 
 	#modal > img {
 		margin-top: 35px;
+	}
+}
+
+@media only screen and (min-width: 1400px) {
+	#contentcontainer {
+		top: 750px;
+	}
+}
+
+@media only screen and (min-width: 1700px) {
+	#contentcontainer {
+		top: 800px;
+	}
+}
+
+@media only screen and (min-width: 1900px) {
+	#contentcontainer {
+		top: 850px;
 	}
 }
 
