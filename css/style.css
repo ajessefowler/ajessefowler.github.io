@@ -226,7 +226,6 @@ footer > a:not(:last-of-type) {
 	z-index: 1;
 	background-color: #eee;
 	top: 270px;
-	border-radius: 14px 14px 0 0;
 }
 
 #modal {
@@ -594,7 +593,6 @@ footer > a:not(:last-of-type) {
 
 	#contentcontainer {
 		top: 600px;
-		border-radius: 0;
 	}
 
 	#menu {
