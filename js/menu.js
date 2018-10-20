@@ -79,7 +79,7 @@ function initEventListeners() {
 // Fade in menu links from left to right
 function fadeInMenuItems() {
 	let i;
-	let delay = 140;
+	let delay = 190;
 	const nodes = document.querySelectorAll('#menu > a > h3');
 
 	// Fade in each menu link, adding an additional delay to the next link
@@ -120,7 +120,7 @@ function hideNav() {
 function initScrolling() {
 	const contentTop = document.getElementById('contentcontainer').offsetTop;
 	const scroller = zenscroll.createScroller(document.getElementById('maincontainer'), 500, 0);
-	
+
 	function scrollToTop() {
 		scroller.to(document.getElementById('homephoto'));
 	}
