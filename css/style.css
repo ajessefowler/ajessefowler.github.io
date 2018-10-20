@@ -317,7 +317,6 @@ footer > a:not(:last-of-type) {
 	background-image: url(../img/bg.PNG);
 	background-size: 100%;
 	background-repeat: no-repeat;
-	background-position: 50% top;
 	display: flex;
 	flex: 1 0 auto;
 	position: relative;
