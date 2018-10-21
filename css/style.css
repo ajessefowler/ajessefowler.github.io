@@ -336,8 +336,7 @@ footer > a:not(:last-of-type) {
 	background-image: url(../img/bg.PNG);
 	background-size: 100%;
 	background-repeat: no-repeat;
-	background-attachment: scroll;
-	background-position: left top;
+	background-position: 0% 0%;
 	background-position-x: 0%;
 	background-position-y: 0%;
 	display: flex;
@@ -573,6 +572,10 @@ footer > a:not(:last-of-type) {
 		height: 400px;
 	}
 
+	.projecttechs, .skills {
+		font-size: 15pt !important;
+	}
+
 	.projectimages {
 		margin-bottom: 12px;
 	}
@@ -667,10 +670,6 @@ footer > a:not(:last-of-type) {
 
 	#projects > h3:not(:first-of-type) {
 		margin-top: 50px;
-	}
-
-	.projecttechs, .skills {
-		font-size: 15pt !important;
 	}
 
 	#homephoto {
