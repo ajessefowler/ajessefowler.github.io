@@ -4,17 +4,16 @@ function initValidation() {
     let prevEmail;
 
     document.getElementById('send').addEventListener('click', function(event) {
+        const warning = document.getElementById('emailwarning');
         const email = document.getElementById('email').value;
         const checked = (email === prevEmail) ? true : false;
         const isValid = validateEmail(email) ? true : false;
 
         if (!isValid && !checked) {
             event.preventDefault();
-            document.getElementById('emailwarning').style.display = 'block';
-            document.getElementById('email').style.border = '1px solid #e53935';
+            warning.style.display = 'block';
         } else if (isValid) {
-            document.getElementById('emailwarning').style.display = 'none';
-            document.getElementById('email').style.border = '1px solid #ccc';
+            warning.style.display = 'none';
         }
 
         prevEmail = email;

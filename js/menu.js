@@ -55,7 +55,7 @@ function initEventListeners() {
 			displayNav();
 		}
 
-		document.getElementById('menu').style.animation = 'menuIn .3s ease forwards';
+		document.getElementById('menu').style.animation = 'menuIn .4s ease forwards';
 		document.getElementById('menumiddle').style.animation = 'fadeOut .2s ease forwards';
 		document.getElementById('menutop').style.animation = 'menuTopOpen .3s ease forwards';
 		document.getElementById('menubottom').style.animation = 'menuBottomOpen .3s ease forwards';
