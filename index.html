@@ -12,9 +12,9 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="shortcut icon" type="image/png" href="img/thumb.png"/>
 
-	<script defer type="text/javascript" src="js/zenscroll-min.js"></script>
-	<script defer type="text/javascript" src="js/menu.js"></script>
-	<script defer type="text/javascript" src="js/validate.js"></script>
+	<script defer src="js/zenscroll-min.js"></script>
+	<script defer src="js/menu.js"></script>
+	<script defer src="js/validate.js"></script>
 </head>
 <body>
 	<nav>
@@ -29,7 +29,7 @@
 
 	<div id="modal">
 		<div id="modalbg"></div>
-		<img id="modalimage">
+		<img id="modalimage" src="img/speedcats1.PNG" alt="Enlarged image of selected screenshot">
 	</div>
 
 	<div id="menu">
@@ -70,7 +70,7 @@
 				<h3>Frameworks and Libraries</h3>
 				<p class="skills">Django, jQuery</p>
 				<h3>Additional Skills</h3>
-				<p class="skills">Git, User Interface Design, Database Design, Unit Testing, Agile Development</p>
+				<p class="skills">Git, Database Design, Unit Testing, Agile Development</p>
 			</div>
 
 			<div class="info" id="projects">
@@ -84,18 +84,18 @@
 					inventory system and a fully featured administration site.
 				</p>
 				<div class="projectimages">
-					<img src="img/speedcats1.PNG" class="modalimage">
-					<img src="img/speedcats2.PNG" class="modalimage">
+					<img src="img/speedcats1.PNG" class="modalimage" alt="Screenshot of Speedcats Car Rental Mobile Site">
+					<img src="img/speedcats2.PNG" class="modalimage" alt="Screenshot of Speedcats Car Rental Mobile Site">
 				</div>
-				<img src="img/speedcatsd.PNG" class="modalimage">
+				<img src="img/speedcatsd.PNG" class="modalimage" alt="Screenshot of Speedcats Car Rental Desktop Site">
 				<div class="projectbuttons">
-					<button class="projectbutton" onclick="window.open('https://github.com/ajessefowler/speedcats-car-rental', '_blank');";>
+					<button class="projectbutton" onclick="window.open('https://github.com/ajessefowler/speedcats-car-rental', '_blank');">
 						<i class="fas fa-code"></i>
-						<p>Source</p>
+						<span>Source</span>
 					</button>
-					<button class="projectbutton" onclick="window.open('https://speedcats.herokuapp.com', '_blank');";>
+					<button class="projectbutton" onclick="window.open('https://speedcats.herokuapp.com', '_blank');">
 						<i class="fas fa-binoculars"></i>
-						<p>Visit</p>
+						<span>Visit</span>
 					</button>
 				</div>
 
@@ -107,18 +107,18 @@
 					satisfying without sacrificing speed or ease of use.
 				</p>
 				<div class="projectimages">
-					<img src="img/tbolt1.PNG" class="modalimage">
-					<img src="img/tbolt2.PNG" class="modalimage">
+					<img src="img/tbolt1.PNG" class="modalimage" alt="Screenshot of Thunderbolt Weather Mobile Site">
+					<img src="img/tbolt2.PNG" class="modalimage" alt="Screenshot of Thunderbolt Weather Mobile Site">
 				</div>
-				<img src="img/tboltd.PNG" class="modalimage">
+				<img src="img/tboltd.PNG" class="modalimage" alt="Screenshot of Thunderbolt Weather Desktop Site">
 				<div class="projectbuttons">
-					<button class="projectbutton" onclick="window.open('https://github.com/ajessefowler/thunderbolt-weather', '_blank');";>
+					<button class="projectbutton" onclick="window.open('https://github.com/ajessefowler/thunderbolt-weather', '_blank');">
 						<i class="fas fa-code"></i>
-						<p>Source</p>
+						<span>Source</span>
 					</button>
-					<button class="projectbutton" onclick="window.open('https://ajessefowler.github.io/thunderbolt-weather/', '_blank');";>
+					<button class="projectbutton" onclick="window.open('https://ajessefowler.github.io/thunderbolt-weather/', '_blank');">
 						<i class="fas fa-binoculars"></i>
-						<p>Visit</p>
+						<span>Visit</span>
 					</button>
 				</div>
 			</div>
@@ -130,17 +130,17 @@
 				<!-- Use text areas because input fields cause scrolling problems with parallax on iOS -->
 				<form name="contactform" id="contactform" action="https://formspree.io/ajessefowler@icloud.com" method="POST">
 					<p>Name</p>
-					<textarea name="name" id="name" rows="1"></textarea>
+					<textarea name="name" id="name" rows="1" required></textarea>
 					<p>Email</p>
-					<textarea name="email" id="email"></textarea>
+					<textarea name="email" id="email" required></textarea>
 					<small id="emailwarning">Are you sure this email address is correct? Looks like it may be invalid. Click send again to submit anyway.</small>
 					<p>Subject</p>
-					<textarea name="subject" id="subject"></textarea>
+					<textarea name="subject" id="subject" required></textarea>
 					<p>Message</p>
-					<textarea name="message" id="message"></textarea>
+					<textarea name="message" id="message" required></textarea>
 					<button type="submit" id="send" class="projectbutton" form="contactform">
 						<i class="fas fa-envelope-open-text"></i>
-						<p>Send</p>
+						<span>Send</span>
 					</button>
 				</form>
 			</div>
