@@ -733,6 +733,18 @@ footer > a:not(:last-of-type) {
 	#contentcontainer {
 		top: 850px;
 	}
+
+	#homephoto > h2 {
+		top: 350px;
+		font-size: 44pt;
+	}
+
+	#homephoto > p {
+		font-size: 24pt !important;
+		top: 409px;
+		line-height: 28px;
+		width: 500px;
+	}
 }
 
 @media only screen and (max-width: 365px) {
