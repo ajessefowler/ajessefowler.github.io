@@ -2,12 +2,11 @@
 document.addEventListener('DOMContentLoaded', initEventListeners);
 
 function initEventListeners() {
-	let i;
-	let menuOpen = false;
-	let navOpen = false;
 	const screenWidth = window.screen.availWidth;
 	const menu = document.getElementById('menu');
 	const menuLinks = menu.getElementsByTagName('a');
+	let menuOpen = false;
+	let navOpen = false;
 
 	initScrolling();
 	initModal();
@@ -17,7 +16,7 @@ function initEventListeners() {
 	document.getElementById('maincontainer').addEventListener('scroll', toggleMenuVisibility);
 
 	if (screenWidth < 768) {
-		for (i = 0; i < menuLinks.length; i++) {
+		for (let i = 0; i < menuLinks.length; i++) {
 			const element = menuLinks[i];
 			element.addEventListener('click', closeMenu);
 		}
@@ -55,7 +54,7 @@ function initEventListeners() {
 			displayNav();
 		}
 
-		document.getElementById('menu').style.animation = 'menuIn .4s ease forwards';
+		menu.style.animation = 'menuIn .4s ease forwards';
 		document.getElementById('menumiddle').style.animation = 'fadeOut .2s ease forwards';
 		document.getElementById('menutop').style.animation = 'menuTopOpen .3s ease forwards';
 		document.getElementById('menubottom').style.animation = 'menuBottomOpen .3s ease forwards';
@@ -69,7 +68,7 @@ function initEventListeners() {
 			hideNav();
 		}
 
-		document.getElementById('menu').style.animation = 'menuOut .3s ease forwards';
+		menu.style.animation = 'menuOut .3s ease forwards';
 		document.getElementById('menumiddle').style.animation = 'fadeIn .4s ease forwards';
 		document.getElementById('menutop').style.animation = 'menuTopClose .3s ease forwards';
 		document.getElementById('menubottom').style.animation = 'menuBottomClose .3s ease forwards';
@@ -78,12 +77,11 @@ function initEventListeners() {
 
 // Fade in menu links from left to right
 function fadeInMenuItems() {
-	let i;
 	let delay = 190;
 	const nodes = document.querySelectorAll('#menu > a > h3');
 
 	// Fade in each menu link, adding an additional delay to the next link
-	for (i = 0; i < nodes.length; i++) {
+	for (let i = 0; i < nodes.length; i++) {
 		const element = nodes[i];
 		setTimeout(function() {
 			element.style.animation = 'fadeIn .3s ease forwards';
@@ -94,14 +92,14 @@ function fadeInMenuItems() {
 
 // Fade out menu links
 function fadeOutMenuItems() {
-	let i;
 	const nodes = document.getElementById('menu').getElementsByTagName('h3');
 
-	for (i = 0; i < nodes.length; i++) {
+	for (let i = 0; i < nodes.length; i++) {
 		nodes[i].style.animation = 'fadeOut .1s ease forwards';
 	}
 }
 
+// Display header and allow hover and click events on name
 function displayNav() {
 	document.querySelector('#navbg').style.opacity = '1.0';
 	document.querySelector('nav > a > h2').style.opacity = '1.0';
@@ -109,6 +107,7 @@ function displayNav() {
 	document.querySelector('nav > a > h2').classList.remove('disablehover');
 }
 
+// Hide header and remove hover and click events on name
 function hideNav() {
 	document.querySelector('#navbg').style.opacity = '0.0';
 	document.querySelector('nav > a > h2').style.opacity = '0.0';
@@ -135,6 +134,7 @@ function initScrolling() {
 			});
 		}
 
+		// Offset the top by 55 to account for header
 		function scrollToElement() {
 			const elementTop = contentTop + document.getElementById(element).offsetTop - 55;
 			scroller.toY(elementTop);
@@ -151,7 +151,6 @@ function initScrolling() {
 
 // Displays larger version image in modal when image is clicked
 function initModal() {
-	let i;
 	const viewHeight = window.innerHeight - 70;
 	const image = document.getElementById('modalimage');
 	const elements = document.querySelectorAll('.modalimage');
@@ -159,7 +158,7 @@ function initModal() {
 
 	document.getElementById('modalbg').addEventListener('click', closeModal);
 
-	for (i = 0; i < elements.length; i++) {
+	for (let i = 0; i < elements.length; i++) {
 		elements[i].addEventListener('click', openModal);
 	}
 
@@ -169,6 +168,7 @@ function initModal() {
 		image.style.width = 'auto';
 		modal.style.display = 'flex';
 
+		// If the image can fit in the viewport, increase the height, else fit image to width of viewport
 		if (image.offsetWidth < window.innerWidth) {
 			image.style.width = 'auto';
 			image.style.height = viewHeight + 'px';
@@ -188,11 +188,13 @@ function initModal() {
 	}
 }
 
+// Prevent user from hitting return key on single-line text areas
+// Text areas used because inputs cause scrolling issues with parallax on iOS Safari
 function initForm() {
-	let i;
 	const elements = document.querySelectorAll('textarea');
 
-	for (i = 0; i < elements.length - 1; i++) {
+	// Do not restrict return key on the final text area for message
+	for (let i = 0; i < elements.length - 1; i++) {
 		element = elements[i];
 
 		element.addEventListener('keypress', (event) => {

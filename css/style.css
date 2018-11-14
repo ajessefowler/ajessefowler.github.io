@@ -334,7 +334,7 @@ footer > a:not(:last-of-type) {
 
 #homephoto {
 	width: 100%;
-	background-image: url(../img/bg.PNG);
+	background-image: url(../img/bg.jpg);
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: 0% 0%;
@@ -724,12 +724,20 @@ footer > a:not(:last-of-type) {
 }
 
 @media only screen and (min-width: 1700px) {
+	.info {
+		padding: 17px 23% 40px;
+	}
+
 	#contentcontainer {
 		top: 800px;
 	}
 }
 
 @media only screen and (min-width: 1900px) {
+	.info {
+		padding: 17px 25% 40px;
+	}
+
 	#contentcontainer {
 		top: 850px;
 	}
